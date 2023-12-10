@@ -1,17 +1,17 @@
 export const timelineData = [
 	{
-		header: "Completed Course: React – The Complete Guide 2023 On Udemy",
-		description: "Learned to seamlessly connect React applications with external API’s, exploring techniques like fetching data, handling responses, and update the UI dynamically Implemented React Router to manage navigations in web and mobile development Got hands on experience with react hooks and react components",
+		header: "Get in Touch",
+		description: "Reach out to us with your needs. Whether you're looking for a booking website, an app interface, or a database inventory management solution, we're here to assist you.",
 		img: require("@/images/screen-icon.png")
 	},
 	{
-		header: "Completed Course: Complete C# Unity Game Developer 2D",
-		description: "Used math and vectors for realistic game movements and interactions in unity Designed user-friendly interfaces to provide simple easy and seamless functionality Applied object-oriented programming practices to build scalable game design",
+		header: "Discuss Your Needs",
+		description: "Schedule a consultation to delve into the details of your project. We'll work closely with you, understanding your goals and requirements to provide the best possible solution.",
 		img: require("@/images/screen-icon.png")
 	},
 	{
-		header: "Studied Computer Science Langara College",
-		description: "Studied Java, C++, and React, demonstrating strong programming skills. Expertise in binary, various number bases, and core computing concepts. Applied theoretical knowledge to real-world projects, emphasizing problem-solving.",
+		header: "Receive Custom Solutions",
+		description: "We'll craft a tailor-made solution that aligns perfectly with your unique requirements. Be it a website, app, or inventory management system, our team is committed to delivering high-quality, customized results.",
 		img: require("@/images/screen-icon.png")
 	},
 ]

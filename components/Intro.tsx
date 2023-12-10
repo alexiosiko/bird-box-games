@@ -2,7 +2,8 @@ import Description from "@/components/description";
 import Header from "@/components/header";
 import LeftRight from "@/components/leftright";
 import Image from 'next/image';
-import screenIcon from "@/images/screen-icon.png";
+import WhoAreWE from "@/images/who-are-we.png";
+import MobileDevelopment from "@/images/mobile-developlment.png";
 
 export default function Intro() {
 	return (
@@ -16,7 +17,16 @@ export default function Intro() {
 					</Description>
 				</div>
 				<div>
-					<Image src={screenIcon} alt="image" />
+					<Image src={WhoAreWE} alt="image" />
+				</div>
+			</LeftRight>
+			<LeftRight>
+				<div>
+					<Image src={MobileDevelopment} alt="image" />
+				</div>
+				<div>
+					<Header>We design, build and modernize software applications</Header>
+					<Description>Engage Net Solutions to build a remote, Agile software development team to co-create or update your digital products or platforms with the latest web, mobile and cloud technologies.</Description>
 				</div>
 			</LeftRight>
 		</>
