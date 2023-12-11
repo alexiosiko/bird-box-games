@@ -7,29 +7,27 @@ import MobileDevelopment from "@/images/mobile-developlment.png";
 
 export default function Details() {
 	return (
-		<>
+		<section>
 			<LeftRight>
-				<div>
-					<Header>WHO ARE WE</Header>
-					<Description>
-						As a UX Engineer, I have the design thinking and visual expertise of a designer, as well as the technical skills of a frontend software engineer.
-					</Description>
-				</div>
 				<div>
 					<Image src={WhoAreWE} alt="image" />
 				</div>
+				<div>
+					<Header>Who Are We</Header>
+					<Description>
+					As a close-knit team of developers, we thrive on creating user-friendly software, intuitive apps, and more. Our focus centers on simplicity, accessibility, and reliability, ensuring that our clients are happy with the results they see.
+					</Description>
+				</div>
 			</LeftRight>
 			<LeftRight>
 				<div>
-					<Image src={MobileDevelopment} alt="image" />
+					<Header>What We Do</Header>
+					<Description>Coding is our thing! We build full-stack applications, play with front-end libraries, handle back-end complexities, and groove with databases. We also deploy to mobile; making apps that run on Android and Apple. We keep it simple, accessible, and rock-solid. Why? Because creating awesome stuff that just works? That's what we're all about!</Description>
 				</div>
 				<div>
-					<Header>We design, build and modernize software applications</Header>
-					<Description>Engage Net Solutions to build a remote, Agile software development team to co-create or update your digital products or platforms with the latest web, mobile and cloud technologies.</Description>
+					<Image src={MobileDevelopment} alt="image" />
 				</div>
 			</LeftRight>
-
-
-		</>
+		</section>
 	)
 }

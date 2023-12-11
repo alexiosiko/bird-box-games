@@ -1,13 +1,14 @@
+import { Link }from "react-scroll";
 import React from "react";
 
-export default function Button({ children, onClick, className }: {
+export default function Button({ children, to = "", className }: {
 	children: React.ReactNode,
-	onClick?: React.MouseEventHandler
+	to: string
 	className?: string,
 }) {
 	return (
-		<button onClick={onClick} className={`${className} p-4 m-1 rounded-sm  `}>
-		{children}
-		</button>
+		<Link to={to} smooth={true} className={`${className} flex-grow-0 min-width p-4 m-1 rounded-sm  `}>
+			{children}
+		</Link>
 	)
 }

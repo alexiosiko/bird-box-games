@@ -1,9 +1,12 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import Nav from '@/components/nav'
-import { Kanit } from 'next/font/google'
+import { Rubik } from 'next/font/google'
 
-const inter = Kanit({ weight: "500", subsets: ['latin']});
+const inter = Rubik({
+	subsets: ['latin'],
+	weight: '400'
+});
 
 
 export const metadata: Metadata = {
