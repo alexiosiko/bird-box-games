@@ -27,7 +27,7 @@ export default function Intro() {
 				</Button>
 			</div>
 			<div className="w-1/2 ">
-				<Image src={ScreenImg} alt="development-photo" className="mt-[-50px]"/>
+				<Image src={ScreenImg} alt="development-photo" className="mt-[-100px]"/>
 			</div>
 		</motion.div>
 	)
