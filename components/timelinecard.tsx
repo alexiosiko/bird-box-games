@@ -15,7 +15,7 @@ export default function TimelineCard({ index, data } : { index: number, data: {
 		<motion.div
 			className="flex justify-around w-full relative"
 			ref={scope}
-			onViewportEnter={() => animate(scope.current, { x: 0, opacity: 100}, { duration: 1 })}
+			onViewportEnter={() => animate(scope.current, { x: 0, opacity: 100}, { duration: 1, delay: 0.1 })}
 			initial={initialProps}
 		>
 			<div className={`mt-[106px] absolute bg-[var(--background)] rounded-full w-8 h-8 flex items-center justify-center `} />

@@ -4,12 +4,13 @@ import Button from "./button";
 import Description from "./description";
 import ScreenImg from "@/images/screen-icon.png";
 import Image from "next/image";
+import React from "react";
 
 export default function Intro() {
 
 	return (
 		<motion.div
-			className="h-[600px] mt-64 flex justify-around gap-12"
+			className="flex justify-around gap-12"
 			initial={{ opacity: 0, y: -100 }}
 			animate={{ opacity: 100, y: 0 }}
 			>
