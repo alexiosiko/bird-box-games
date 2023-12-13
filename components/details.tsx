@@ -2,8 +2,8 @@ import Description from "@/components/description";
 import Header from "@/components/header";
 import LeftRight from "@/components/leftright";
 import Image from 'next/image';
-import WhoAreWE from "@/images/intro-new.png";
-import MobileDevelopment from "@/images/mobile-developlment.png";
+import WhoAreWE from "@/images/app-dev-img.png";
+import MobileDevelopment from "@/images/teamworking.png";
 
 export default function Details() {
 	return (
