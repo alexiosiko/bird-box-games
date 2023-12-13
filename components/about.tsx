@@ -5,9 +5,9 @@ import Image from 'next/image';
 import WhoAreWE from "@/images/app-dev-img.png";
 import MobileDevelopment from "@/images/teamworking.png";
 
-export default function Details() {
+export default function About() {
 	return (
-		<section>
+		<section className="about">
 			<LeftRight>
 				<div>
 					<Image src={WhoAreWE} alt="image" />

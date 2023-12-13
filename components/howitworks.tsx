@@ -3,7 +3,7 @@ import Timeline from "./timeline";
 
 export default function HowItWorks() {
 	return (
-		<div>
+		<div className="howitworks">
 			<Header>How It works</Header>
 			<Timeline />
 		</div>
