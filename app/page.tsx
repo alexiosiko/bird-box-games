@@ -8,7 +8,7 @@ import Intro from "@/components/intro";
 export default function Home() {
   return (
 	<main className="m-auto justify-center max-w-7xl h-[2000px]">
-		<Br size={7}/>
+		<Br size={9}/>
 		<Intro />
 		<Br size={5}/>
 		<About />
