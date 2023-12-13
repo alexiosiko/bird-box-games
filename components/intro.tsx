@@ -13,6 +13,7 @@ export default function Intro() {
 			className="flex justify-around gap-12"
 			initial={{ opacity: 0, y: -100 }}
 			animate={{ opacity: 100, y: 0 }}
+			transition={{ delay: 0.6 }}
 			>
 			<div className="w-1/2 ">
 				<div className="text-6xl  text-[var(--header)]">
