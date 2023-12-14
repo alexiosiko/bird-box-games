@@ -9,11 +9,10 @@ import Tags from "@/components/tags";
 export default function Home() {
   return (
 	<main className="m-auto justify-center max-w-7xl h-[2000px]">
-		<section className=" h-screen">
-			<Br size={9} />
-			<Intro />
-			<Tags />
-		</section>
+		<Br size={9} />
+		<Intro />
+		<Tags />
+		<Br size={9} />
 		<About />
 		<Br size={3}/>
 		<HowItWorks />
