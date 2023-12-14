@@ -4,6 +4,7 @@ import Button from "./button";
 import Description from "./description";
 import ScreenImg from "@/images/screen-icon.png";
 import Image from "next/image";
+import LeftRight from "./leftright";
 
 export default function Intro() {
 
@@ -31,6 +32,7 @@ export default function Intro() {
 			<div className="w-1/2 ">
 				<Image src={ScreenImg} alt="development-photo" className="mt-[-100px]"/>
 			</div>
+			
 		</motion.div>
 	)
 }

@@ -4,12 +4,14 @@ import React from "react"
 import Card from "./card";
 
 export default function LeftRight({
-	children
+	children,
+	className
 }: {
-	children: React.ReactNode
+	children: React.ReactNode,
+	className?: string
 }) {
 	return (
-	  	<div className="md:flex justify-around gap-12">
+	  	<div className={`${className} md:flex justify-around gap-12`}>
 			{React.Children.map(children, (child, index) =>
 				<Card key={index} index={index} child={child} />
 			)}	
