@@ -4,7 +4,6 @@ import Button from "./button";
 import Description from "./description";
 import ScreenImg from "@/images/screen-icon.png";
 import Image from "next/image";
-import React from "react";
 
 export default function Intro() {
 
@@ -16,7 +15,7 @@ export default function Intro() {
 			transition={{ delay: 0.6 }}
 			>
 			<div className="w-1/2 ">
-				<div className="text-6xl  text-[var(--header)]">
+				<div className="text-6xl  text-[var(--title)]">
 					We make your 
 					<span className='text-[var(--accent)]'> ideas </span> 
 					come to 
