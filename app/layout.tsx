@@ -1,9 +1,9 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import Nav from '@/components/nav'
-import { Rubik } from 'next/font/google'
+import { Signika_Negative } from 'next/font/google'
 
-const inter = Rubik({
+const inter = Signika_Negative({
 	subsets: ['latin'],
 	weight: '400'
 });

@@ -13,7 +13,7 @@ export const timelineData = [
 	},
 	{
 		title: "Final Tweaks and Adjustments",
-		description: "As we finalize your project, we're open to making any last-minute tweaks or adjustments. If there's anything else you'd like to add or modify, we'll be here to support and update your application as requested.",
+		description: "As we finalize your project, we're open to making any last-minute tweaks or adjustments. If there's anything else you'd like to add or modify, we'll be here to support and update your application for longterm as requested.",
 	},
   ];
   
