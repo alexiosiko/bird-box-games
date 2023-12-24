@@ -15,8 +15,8 @@ export default function Contact() {
 			<motion.div
 				className="contact w-2/3 m-auto"
 				ref={scope}	
-				initial={{ y: 300, opacity: 0 }}
-				onViewportEnter={() => animate(scope.current, { y: 0, opacity: 100 }, { duration: 1.2, delay: 0.1})}
+				initial={{ y: 100, opacity: 0 }}
+				onViewportEnter={() => animate(scope.current, { y: 0, opacity: 100 }, {  delay: 0.2})}
 			>
 
 				<Description>We want you to be happy with your expected results before we get started.</Description>

@@ -7,7 +7,7 @@ export default function TimelineCard({ index, data }: { index: number; data: { t
 	
 	const [scope, animate] = useAnimate();
 
-	const initialX = index % 2 == 0 ? -600 : 600;
+	const initialX = index % 2 == 0 ? -450 : 450;
 	const endX = index % 2 == 0 ? -350 : 350;
 
 	const triangleStyle = index % 2 == 0 ? "rotate-90 translate-x-[500px]" : "-rotate-90 -translate-x-[40px]";
@@ -17,7 +17,7 @@ export default function TimelineCard({ index, data }: { index: number; data: { t
 			<motion.div	
 				className="border-1 border bg-[var(--foreground)] max-w-[40%] h-48 p-4 rounded-lg"
 				ref={scope}
-				onViewportEnter={() => animate(scope.current, { x: endX, opacity: 1 }, { duration: 1.2, delay: 0.1 })}
+				onViewportEnter={() => animate(scope.current, { x: endX, opacity: 1 }, { delay: 0.1 })}
 				initial={{ x: initialX, opacity: 0 }}
 				>
 				<Triangle className={` ${triangleStyle} absolute translate-y-[65px] z-10 `} />
