@@ -1,13 +1,14 @@
 import type { Metadata } from 'next'
 import './globals.css'
-import Nav from '@/components/nav'
+import Nav from '@/components/sections/nav'
 import { Signika_Negative } from 'next/font/google'
+import Image from 'next/image';
+import Wallpaper from "@/images/svg/wallpaper-waves.svg";
 
 const inter = Signika_Negative({
 	subsets: ['latin'],
 	weight: '400'
 });
-
 
 export const metadata: Metadata = {
   title: 'Dev Olympus',
@@ -21,10 +22,13 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className={`${inter.className} bg-[var(--background)] text-[var(--base)]`}>
-				<Nav />
-				{children}
+			<body className={`${inter.className}  bg-[var(--background)] text-[var(--base)]`}>
+				<div className=''>
+					<Nav />
+					{children}
+				</div>
 			</body>
+
 		</html>
 	)
 }

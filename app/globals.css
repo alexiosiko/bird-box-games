@@ -4,13 +4,20 @@
 
 
 :root {
-	--background: #F0F7EE;
+	--background: #f7f9ff;
 	--foreground: #ffffff;
+	
+	--title: #ffffff;
+	--base: #bfbfbf;
 
-	--title: #302d2e;
-	--base: #776871;
+	--dark: #696969;
 
-
-	--accent: #2c80f6;
-	--accent-foreground: #131b25;
+	--accent: #59c0a3;
+	--accent-foreground: #fff;
+}
+body {
+	margin: 0;
+}
+p {
+	font-size: 20px;
 }
