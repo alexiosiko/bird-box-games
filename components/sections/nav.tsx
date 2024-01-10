@@ -9,7 +9,7 @@ export default function Nav() {
 	return (
 		<div style={{ zIndex: -100}}>
 			<Image src={DevOlympusLogo} height={40} className="object-contain absolute top-4 left-4" alt="dev-olympus-logo" />
-			<div  className="flex gap-10 justify-center text-center p-2 text-[15px]">
+			<div  className="flex gap-10 hover:cursor-pointer justify-center text-center p-2 text-[15px] text-[var(--foreground)]">
 				<Button to="about" className={buttonStyles}>
 					About
 				</Button>
