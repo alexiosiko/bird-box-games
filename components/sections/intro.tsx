@@ -22,8 +22,8 @@ export default function Intro() {
 						come to 
 						<span className='text-[var(--accent)]'> life</span>.
 					</div>
-					<Description className="!text-left mt-4 mb-12">
-						We design, develop, and deploy software development products to our most valued customers.
+					<Description className="!text-left mt-4 mb-12 text-[var(--background)]">
+						We design, develop, and deploy software d evelopment products to our most valued customers.
 					</Description>
 					<Button to="contact" className="mt-8 hover:rounded-xl transition-all cursor-pointer bg-[var(--accent)] text-[var(--accent-foreground)]">
 						Contact Us

@@ -13,7 +13,7 @@ export default function Home() {
   return (
 	<main>
 		<div className="max-w-7xl m-auto">
-			<Wallpaper svg={wallpaperSVG} className=" " />
+			<Wallpaper svg={wallpaperSVG} className="top-0" />
 			<Br size={9} />
 			<Intro />
 			<Br size={9} />
@@ -22,9 +22,9 @@ export default function Home() {
 			<WhoAreWe />
 			<Br size={3}/>
 			<WhatWeDo />
-			<Br size={5}/>
+			<Br size={6}/>
 			<Pricing />
-			<Br size={8}/>
+			<Br size={10}/>
 			<Contact />
 			<Br size={7}/>
 			<Footer />

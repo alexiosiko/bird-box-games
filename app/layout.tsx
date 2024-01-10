@@ -1,11 +1,9 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import Nav from '@/components/sections/nav'
-import { Signika_Negative } from 'next/font/google'
-import Image from 'next/image';
-import Wallpaper from "@/images/svg/wallpaper-waves.svg";
+import { Montserrat } from 'next/font/google'
 
-const inter = Signika_Negative({
+const inter = Montserrat({
 	subsets: ['latin'],
 	weight: '400'
 });
@@ -23,10 +21,8 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body className={`${inter.className}  bg-[var(--background)] text-[var(--base)]`}>
-				<div className=''>
-					<Nav />
-					{children}
-				</div>
+				<Nav />
+				{children}
 			</body>
 
 		</html>

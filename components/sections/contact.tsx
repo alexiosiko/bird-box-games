@@ -20,7 +20,7 @@ export default function Contact() {
 	const inputStyle:string  = "rounded-md h-8 p-2 text-black shadow-md";
 	return (
 		<section className="relative">
-			<Wallpaper svg={wallpaperSVG} className="-bottom-[600px]" />
+			<Wallpaper svg={wallpaperSVG} className="-bottom-[730px]" />
 
 			<Header className="mb-[50px] !text-[var(--accent-foreground)]">Free Consulation!</Header>
 			<motion.div
@@ -53,7 +53,7 @@ export default function Contact() {
 						</div>
 					</div>
 						<label className="-mb-4">Description your application ... What? / Where? / Why?</label>
-						<textarea className={`${inputStyle} h-48`} />
+						<textarea className={`${inputStyle} h-52`} />
 					<div className="grid grid-cols-2 gap-4">
 						<div className="flex flex-col">
 							<label>Your Plan</label>

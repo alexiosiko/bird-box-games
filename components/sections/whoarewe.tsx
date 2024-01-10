@@ -9,7 +9,7 @@ import Header from "../header";
 export default function WhoAreWe() {
   return (
     <div className="howitworks relative">
-      <Wallpaper svg={wallpaperSVG} className="bottom-[-400px]" />
+      <Wallpaper svg={wallpaperSVG} className="bottom-[-1000px]" />
       <LeftRight>
         <Image src={Img} alt="image" />
         <div className="p-24">

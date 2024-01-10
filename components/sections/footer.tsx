@@ -1,6 +1,6 @@
 export default function Footer() {
 	return (
-		<footer className="text-center flex-col flex">
+		<footer className="text-center flex-col self-end flex text-[var(--background)]">
 			<p>© 2023 Dev Olympus. All Rights Reserved.</p>
 			<a href="https://www.vecteezy.com/free-vector/infographic">Infographic Vectors by Vecteezy</a>
 			<a href="https://www.flaticon.com/free-icons/trust" title="trust icons">Trust icons created by Flat Icons - Flaticon</a>
