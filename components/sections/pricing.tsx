@@ -1,5 +1,3 @@
-import Image from "next/image";
-import icon from "@/images/icons/money.png";
 import PricingCard from "../pricingcard";
 import { basic, enterprise, pro } from "@/data/plans";
 
