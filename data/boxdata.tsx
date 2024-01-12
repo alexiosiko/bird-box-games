@@ -10,13 +10,13 @@ export const boxData = [
 		img: handShake,
 	},
 	{
-		header: "Afforable",
-		description: "No surprises! We are clear about our plans and we will NEVER surprise our clients with unwanted expenses.",
+		header: "Affordable",
+		description: "No surprises! We are clear about our plans and we will NEVER surprise our clients with unwanted expenses",
 		img: coin,
 	},
 	{
 		header: "Quality Products",
-		description: "We focus on quality and easy use in our products. ",
+		description: "We focus on reliable, appealing, and easy to use interfaces in our products.",
 		img: medal,
 	},
 ]
