@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
+    "\\app",
     "\\components"
   ],
-  "SelectedNode": "\\components\\timelinecard.tsx",
+  "SelectedNode": "\\app\\page.tsx",
   "PreviewInSolutionExplorer": false
 }
