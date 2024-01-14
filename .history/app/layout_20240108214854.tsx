@@ -1,11 +1,11 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import Nav from '@/components/sections/nav'
-import { Kanit } from 'next/font/google'
+import { Montserrat } from 'next/font/google'
 
-const inter = Kanit({
+const inter = Montserrat({
 	subsets: ['latin'],
-	weight: '600'
+	weight: '400'
 });
 
 export const metadata: Metadata = {
