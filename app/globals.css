@@ -4,15 +4,16 @@
 
 
 :root {
-	--background: #f7f9ff;
+	--background: #e4e4e4;
 	--foreground: #ffffff;
 	
 	--title: #ffffff;
 	--base: #8a8a8a;
 
-	--dark: #575757;
+	--dark: #383838;
 
-	--accent: #acffa4;
+	--accent: rgb(2, 227, 66);
+	--accent-other: #166CFF;
 	--accent-foreground: #fff;
 }
 body {

@@ -8,7 +8,7 @@ export default function Wallpaper({ svg, className }: {
 			backgroundSize: 'cover',
 			backgroundPosition: 'top',
 			fill: "true",
-			height: '1400px', // Adjust the height as needed
+			height: '100%', // Adjust the height as needed
 			position: 'absolute',
 			zIndex: -10,
 			width: '100vw',

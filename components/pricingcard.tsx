@@ -1,5 +1,3 @@
-"use client"
-
 import Image from "next/image";
 import icon from "@/images/icons/check.png";
 import { motion, useAnimate } from "framer-motion";

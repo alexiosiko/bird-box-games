@@ -1,11 +1,13 @@
 import type { Metadata } from 'next'
 import './globals.css'
 import Nav from '@/components/sections/nav'
-import { Kanit } from 'next/font/google'
+import { Open_Sans } from 'next/font/google'
+import Wallpaper from '@/components/wallpaper';
+import wallpaperSVG from "@/images/wallpapers/whole.svg"
 
-const inter = Kanit({
+const inter = Open_Sans({
 	subsets: ['latin'],
-	weight: '600'
+	weight: '500',
 });
 
 export const metadata: Metadata = {
@@ -20,7 +22,8 @@ export default function RootLayout({
 }) {
 	return (
 		<html lang="en">
-			<body className={`${inter.className}  bg-[var(--background)] text-[var(--base)]`}>
+			<body className={`${inter.className} bg-[var(--background)] text-[var(--base)]`}>
+				<Wallpaper className='z-10 top-[100vh] !h-[5000px]' svg={wallpaperSVG} />
 				<Nav />
 				{children}
 			</body>

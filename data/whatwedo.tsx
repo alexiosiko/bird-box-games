@@ -4,7 +4,7 @@ import Design from "@/images/icons/design.png";
 
 export const whatwedo = {
 	title: "What We Do",
-	description: "At Dev Olympus, we excel in full-stack development, specializing in dynamic web solutions and robust databases. From streamlined booking systems to secure payment solutions, we bring your ideas to life with expertise and precision. Count on us for comprehensive and efficient web development that exceeds your expectations.",
+	description: "Dev Olympus excels in creating dynamic websites and robust databases with streamlined solutions, ensuring efficient and comprehensive development that exceeds expectations.",
 	items: [
 	  {
 		header: "Web Applications",

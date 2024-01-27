@@ -1,33 +1,36 @@
-"use client"
 import { motion } from "framer-motion";
-import Button from "../button";
+import ScrollLink from "../scrolllink";
 import Description from "../description";
-import ScreenImg from "@/images/111.png";
+import ScreenImg from "@/images/hero-banner.png";
 import Image from "next/image";
+import Wallpaper from "../wallpaper";
+import wallpaperSVG from "@/images/wallpapers/top-old.svg";
+import Accent from "../accent";
 
 export default function Intro() {
 
 	return (
-		<div className="relative overflow-visible">
+		<div className="relative overflow-visible h-[100vh] flex items-center">
+			<Wallpaper svg={wallpaperSVG}  className="!h-full" />
 			<motion.div
-				className="flex justify-around gap-12"
+				className="flex justify-around gap-12 -mt-24"
 				initial={{ opacity: 0, y: -100 }}
 				animate={{ opacity: 100, y: 0 }}
 				transition={{ delay: 0.6 }}
 				>
-				<div className="w-1/4">
-					<div className="text-6xl text-[var(--title)]">
+				<div className="w-1/2">
+					<div className="text-6xl font-black leading-snug text-[var(--title)]">
 						We make your 
-						<span className='text-[var(--accent)]'> ideas </span> 
+						<Accent> ideas </Accent>
 						come to 
-						<span className='text-[var(--accent)]'> life</span>.
+						<Accent> life</Accent>.
 					</div>
 					<Description className="!text-left mt-4 mb-12 text-[var(--foreground)]">
 						We design, develop, and deploy software development products to our most valued customers.
 					</Description>
-					<Button to="contact" className="mt-8 hover:rounded-xl transition-all cursor-pointer bg-[var(--accent)] text-[var(--accent-foreground)]">
+					<ScrollLink to="contact" className="mt-8 hover:rounded-xl transition-all cursor-pointer bg-[var(--accent)] text-[var(--accent-foreground)]">
 						Contact Us
-					</Button>
+					</ScrollLink>
 				</div>
 				<div className="w-1/2 ">
 					<Image src={ScreenImg} alt="development-photo" className="mt-[-100px]"/>

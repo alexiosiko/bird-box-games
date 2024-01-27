@@ -11,7 +11,7 @@ export type boxDataType = {
 
 export default function BoxContainer() {
 	return (
-		<div className="boxcontainer grid grid-cols-3">
+		<div className="boxcontainer grid grid-cols-3 gap-28">
 			{
 				boxData.map((data: boxDataType, index: number ) =>
 					<Box data={data} index={index} key={index} />

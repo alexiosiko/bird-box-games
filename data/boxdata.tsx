@@ -1,4 +1,3 @@
-import icon from "@/images/icons/money.png";
 import coin from "@/images/icons/coin.png";
 import handShake from "@/images/icons/hand-shake.png";
 import medal from "@/images/icons/medal.png";
