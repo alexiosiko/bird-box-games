@@ -1,4 +1,3 @@
-import Money from '@/images/icon/money.png';
 import Image, { StaticImageData } from 'next/image';
 import { motion } from "framer-motion";
 import { boxDataType } from './boxcontainer';

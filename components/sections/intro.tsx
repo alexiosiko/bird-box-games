@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import ScrollLink from "../scrolllink";
 import Description from "../description";
-import ScreenImg from "@/images/hero-banner.png";
+import ScreenImg from "@/images/phone.png";
 import Image from "next/image";
 import Wallpaper from "../wallpaper";
 import wallpaperSVG from "@/images/wallpapers/top-old.svg";
