@@ -28,7 +28,7 @@ export default function Intro() {
 					<Description className="!text-left mt-4 mb-12 text-[var(--foreground)]">
 						We design, develop, and deploy software development products to our most valued customers.
 					</Description>
-					<ScrollLink to="contact" className="mt-8 hover:rounded-xl transition-all cursor-pointer bg-[var(--accent)] text-[var(--accent-foreground)]">
+					<ScrollLink to="contact" className="button">
 						Contact Us
 					</ScrollLink>
 				</div>

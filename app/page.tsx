@@ -22,9 +22,9 @@ export default function Home() {
 			<WhoAreWe />
 			<Br size={7}/>
 			<WhatWeDo />
-			<Br size={3}/>
+			<Br size={0}/>
 			<BoxContainer />
-			<Br size={7} />
+			<Br size={9} />
 			<Industries />
 			<Br size={10}/>
 			<Pricing />

@@ -22,3 +22,10 @@ body {
 p {
 	font-size: 20px;
 }
+
+/* mt-8 hover:rounded-xl transition-all cursor-pointer bg-[var(--accent)] text-[var(--accent-foreground)] */
+.button {
+	cursor: pointer;
+	background: var(--accent);
+	color: var(--accent-foreground);
+}

@@ -13,6 +13,7 @@ export default function WhatWeDo() {
 					<Header>
 						{data.title}
 					</Header>
+					<br />
 					<Description>{data.description}</Description>
 					<br /><br />
 					<div className={`flex flex-col`}>

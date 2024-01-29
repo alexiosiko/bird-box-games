@@ -12,10 +12,13 @@ export default function AfterIntro() {
 					Excellence in Software Development
 					Delivered Quickly
 				</Header>
-				<br />
-					<Description className="!text-left">
-						At Dev Olympus, we bring your ideas to life with professionalism, quality, and reliability in every digital creation.
-					</Description>
+				<br /><br />
+				<Description className="!text-left">
+					At Dev Olympus, we bring your ideas to life with professionalism, quality, and reliability in every digital creation.
+					<br />
+					<br />
+					Our goal is not just to meet your expectations but to exceed them, ensuring your satisfaction and delivering exactly what you need. Your happiness with our product is our ultimate priority.
+				</Description>
 				<br />
 				<br />
 				<button className="bg-[var(--accent)] text-[var(--accent-foreground)] p-4 rounded-full">

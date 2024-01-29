@@ -10,7 +10,7 @@ export const boxData = [
 	},
 	{
 		header: "Affordable",
-		description: "No surprises! We are clear about our plans and we will NEVER surprise our clients with unwanted expenses",
+		description: "No hidden costs! We are transparent about our plans, offering affordable options, and showcasing them upfront to ensure clarity and trust with our clients.",
 		img: coin,
 	},
 	{

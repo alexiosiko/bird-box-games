@@ -1,6 +1,8 @@
 import { StaticImageData } from "next/image";
 import Box from "./box";
 import { boxData } from "@/data/boxdata";
+import DownUpMotion from "./downupmotion";
+import Header from "./header";
 
 export type boxDataType = {
 		header: string,
@@ -11,12 +13,18 @@ export type boxDataType = {
 
 export default function BoxContainer() {
 	return (
-		<div className="boxcontainer grid grid-cols-3 gap-28">
-			{
-				boxData.map((data: boxDataType, index: number ) =>
+		<section>
+			{/* <DownUpMotion>
+				<Header>Why Choose Us?</Header>
+			</DownUpMotion> */}
+			<br /><br />
+			<div className="flex gap-28">
+				{
+					boxData.map((data: boxDataType, index: number ) =>
 					<Box data={data} index={index} key={index} />
-				)
-			}
-		</div>
+					)
+				}
+			</div>
+		</section>
 	)
 }

@@ -12,6 +12,7 @@ export default function Industries() {
 			<DownUpMotion >
 				<Header className="">Industries We Serve</Header>
 			</DownUpMotion>
+			<br />
 			<Br size={2} />
 			<div className="grid grid-cols-4 gap-10">
 				{weServeData.map((data, index: number) => 
