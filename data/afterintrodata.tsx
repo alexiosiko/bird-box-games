@@ -7,7 +7,7 @@ import teamwork from "@/images/afterintro/teamwork.png";
 
 export const afterIntroData = [
 	{
-		header: "12+",
+		header: "4+",
 		description: "Years Experience",
 		img: rocket,
 	},
@@ -28,12 +28,12 @@ export const afterIntroData = [
 	},
 	{
 		header: "50+",
-		description: "Countries Served",
+		description: "Countries Serving",
 		img: globe,
 	},
 	{
-		header: "Quality Products",
-		description: "We focus on reliablefdf.",
+		header: "100%",
+		description: "Customer Satisfaction",
 		img: client,
 	},
 ]

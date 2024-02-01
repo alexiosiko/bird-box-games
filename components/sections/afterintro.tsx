@@ -21,13 +21,13 @@ export default function AfterIntro() {
 				</Description>
 				<br />
 				<br />
-				<button className="bg-[var(--accent)] text-[var(--accent-foreground)] p-4 rounded-full">
+				<button className="bg-[var(--accent)] font-black text-[var(--accent-foreground)] p-4 rounded-full">
 					Get Started
 				</button>
 			</div>
 			<div className="grid grid-cols-3 gap-10">
 				{afterIntroData.map((data, index: number) =>
-					<AfterIntroCard data={data} key={index} />
+					<AfterIntroCard data={data} index={index} key={index} />
 				)}
 			</div>
 		</LeftRight>
