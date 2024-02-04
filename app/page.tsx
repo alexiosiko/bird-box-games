@@ -8,7 +8,6 @@ import WhoAreWe from "@/components/sections/whoarewe";
 import Intro from "@/components/sections/intro";
 import BoxContainer from "@/components/boxcontainer";
 import Pricing from "@/components/sections/pricing";
-import Industries from "@/components/sections/industries";
 import AfterIntro from "@/components/sections/afterintro";
 
 export default function Home() {
@@ -25,8 +24,6 @@ export default function Home() {
 			<Br size={0}/>
 			<BoxContainer />
 			<Br size={9} />
-			<Industries />
-			<Br size={10}/>
 			<Pricing />
 			<Br size={10}/>
 			<Contact />

@@ -30,7 +30,7 @@ export default function WhatWeDo() {
 					))}
 					</div>
 				</div>
-				<Image src={svg} width={500} alt="illustratiuon" />
+				<Image src={svg} width={500} alt="illustration" />
 			</LeftRight>
 		</section>
 	)
