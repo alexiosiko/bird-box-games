@@ -14,7 +14,7 @@ export default function AfterIntroCard({ data, index }: {
 	const [scope, animate] = useAnimate();
 	return (
 		<motion.div
-		className="grid bg-[var(--foreground)] font-[var(--dark)] p-[15%] sm:rounded-bl-[50px] shadow-md"
+		className="grid bg-[var(--foreground)] font-[var(--base)] p-[15%] sm:rounded-bl-[50px] shadow-md"
 		ref={scope}
 		initial={{ x: 100, opacity: 0 }}
 		onViewportEnter={() => animate(scope.current, { x: 0, opacity: 100 }, { delay: 0.2 + index / 10})}

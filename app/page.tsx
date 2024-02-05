@@ -9,6 +9,7 @@ import Intro from "@/components/sections/intro";
 import BoxContainer from "@/components/boxcontainer";
 import Pricing from "@/components/sections/pricing";
 import AfterIntro from "@/components/sections/afterintro";
+import Quote from "@/components/sections/quote";
 
 export default function Home() {
   return (
@@ -24,10 +25,8 @@ export default function Home() {
 			<Br size={0}/>
 			<BoxContainer />
 			<Br size={9} />
-			<Pricing />
+			<Quote />
 			<Br size={10}/>
-			<Contact />
-			<Br size={7}/>
 			<Footer />
 		</div>
 	</main>

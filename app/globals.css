@@ -2,15 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
 	--background: #e4e4e4;
 	--foreground: #ffffff;
 	
 	--title: #ffffff;
-	--base: #8a8a8a;
-
-	--dark: #383838;
+	--base: #383838;
 
 	--accent: #02e342;
 	--accent-other: #166CFF;

@@ -23,7 +23,7 @@ export default function WhatWeDo() {
 								<Image className="object-contain" src={item.image} alt="icon" width={60} height={60} />
 							</div>
 							<div>
-								<Header className="text-[var(--dark)] !text-left text-lg font-semibold">{item.header}</Header>
+								<Header className="text-[var(--base)] !text-left text-lg font-semibold">{item.header}</Header>
 								<Description className="!text-left">{item.description}</Description>
 							</div>
 						</div>
