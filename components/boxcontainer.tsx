@@ -18,7 +18,7 @@ export default function BoxContainer() {
 				<Header>Why Choose Us?</Header>
 			</DownUpMotion> */}
 			<br /><br />
-			<div className="flex gap-28">
+			<div className="grid grid-cols-3 md:gap-28 gap-3">
 				{
 					boxData.map((data: boxDataType, index: number ) =>
 					<Box data={data} index={index} key={index} />

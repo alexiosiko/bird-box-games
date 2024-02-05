@@ -3,17 +3,18 @@ import Description from "../description";
 import Header from "../header";
 import LeftRight from "../leftright";
 import AfterIntroCard from "../afterintrocard";
+import ScrollLink from "../scrolllink";
 
 export default function AfterIntro() {
 	return (
 		<LeftRight>
-			<div className="mb-24 ">
-				<Header className="!text-left">
+			<div className="mb-24 max-md:flex flex-col">
+				<Header>
 					Excellence in Software Development
 					Delivered Quickly
 				</Header>
 				<br /><br />
-				<Description className="!text-left">
+				<Description>
 					At Dev Olympus, we bring your ideas to life with professionalism, quality, and reliability in every digital creation.
 					<br />
 					<br />
@@ -21,11 +22,11 @@ export default function AfterIntro() {
 				</Description>
 				<br />
 				<br />
-				<button className="bg-[var(--accent)] font-black text-[var(--accent-foreground)] p-4 rounded-full">
+				<ScrollLink to="contact" className="button">
 					Get Started
-				</button>
+				</ScrollLink>
 			</div>
-			<div className="grid grid-cols-3 gap-10">
+			<div className="grid grid-cols-3 gap-[3%]">
 				{afterIntroData.map((data, index: number) =>
 					<AfterIntroCard data={data} index={index} key={index} />
 				)}

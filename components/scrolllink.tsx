@@ -7,7 +7,7 @@ export default function ScrollLink({ children, to = "", className }: {
 	className?: string,
 }) {
 	return (
-		<Link to={to} smooth={true} className={`${className} flex-grow-0 min-width p-4 pl-8 pr-8 m-1 rounded-[40px]  `}>
+		<Link to={to} smooth={true} className={`${className} mr-auto ml-auto rounded-full p-4 pl-8 pr-8 `}>
 			{children}
 		</Link>
 	)

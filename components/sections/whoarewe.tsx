@@ -7,14 +7,14 @@ import Description from "../description";
 export default function WhoAreWe() {
   return (
     <div className="howitworks relative">
-      <LeftRight>
-        <Image width={700} src={Img} alt="image" />
-        <div className="">
+      <LeftRight className="max-md:flex max-md:flex-col-reverse">
+        <Image className="max-md:mt-12" width={700} src={Img} alt="image" />
+        <div>
 			<Header>Who Are We</Header>
 			<br />
-			<Description className="!text-left">
+			<Description>
 				At Dev Olympus, we focus on making awesome things that make our clients really happy. We always do our best to exceed expectations and ensure our clients love what we deliver. Quality is key for us, and it's what makes our solutions stand out and have a positive impact.
-				</Description>
+			</Description>
 		</div>
       </LeftRight>
     </div>

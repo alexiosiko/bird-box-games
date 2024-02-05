@@ -10,7 +10,7 @@ export default function Box({ data, index }: { data: boxDataType; index: number 
       initial={{ opacity: 0, y: 100 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 1.2 + index / 5, duration: 0.4 }}
-      className="m-auto rounded-lg "
+      className="m-auto rounded-lg mt-0"
     >
       <Image className='m-auto' src={data.img} width={80} height={80} alt='money' />
       <br />

@@ -12,14 +12,14 @@ import AfterIntro from "@/components/sections/afterintro";
 
 export default function Home() {
   return (
-	<main>
-		<div className="max-w-7xl m-auto">
+	<main className="overflow-hidden">
+		<div className="max-w-7xl m-auto pl-4 pr-4">
 			<Intro />
 			<Br size={4} />
 			<AfterIntro />
 			<Br size={6} />
 			<WhoAreWe />
-			<Br size={7}/>
+			<Br size={5}/>
 			<WhatWeDo />
 			<Br size={0}/>
 			<BoxContainer />

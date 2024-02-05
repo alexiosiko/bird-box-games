@@ -10,7 +10,7 @@ export default function Card({ index, child }: {
 	return (
 		<motion.div 
 			key={index} 
-			className={`flex-1 p-4 m-auto justify-center flex`}
+			className={`flex-1 m-auto justify-center flex`}
 			ref={scope}
 			initial={initialProps}
 			
