@@ -8,7 +8,7 @@ export default function Pricing() {
 	return (
 		<section>
 			<DownUpMotion>
-				<Header>Our Plans</Header>
+				<Header className="text-center">Our Plans</Header>
 			</DownUpMotion>
 			<Br size={3} />
 			<div className="flex justify-center gap-4">
