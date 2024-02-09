@@ -12,12 +12,7 @@ export const afterIntroData = [
 		img: rocket,
 	},
 	{
-		header: "250+",
-		description: "Talented Squad",
-		img: teamwork,
-	},
-	{
-		header: "1200+",
+		header: "20+",
 		description: "Apps Developed",
 		img: apps,
 	},
@@ -30,6 +25,11 @@ export const afterIntroData = [
 		header: "50+",
 		description: "Countries Serving",
 		img: globe,
+	},
+	{
+		header: "5+",
+		description: "Talented Squad",
+		img: teamwork,
 	},
 	{
 		header: "100%",

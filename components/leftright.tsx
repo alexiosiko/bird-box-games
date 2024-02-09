@@ -9,7 +9,7 @@ export default function LeftRight({
 	className?: string,
 }) {
 	return (
-	  	<div className={`${className} md:flex`}>
+	  	<div className={`${className} md:flex md:gap-12`}>
 			{React.Children.map(children, (child, index) =>
 				<Card key={index} index={index} child={child} />
 			)}	

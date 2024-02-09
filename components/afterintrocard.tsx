@@ -24,7 +24,7 @@ export default function AfterIntroCard({ data, index }: {
 				<br />
 				<Header className="!text-3xl flex-grow">{data.header}</Header>
 			</div>
-			<Description>{data.description}</Description>
+			<Description className="text-center">{data.description}</Description>
 		</motion.div>
 	)
 }
