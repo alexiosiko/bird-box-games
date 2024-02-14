@@ -3,15 +3,14 @@
 @tailwind utilities;
 
 :root {
-	--background: #e4e4e4;
+	--background: #f8f8f8;
 	--foreground: #ffffff;
 	
-	--title: #ffffff;
+	--title: #000000;
 	--base: #383838;
 
-	--accent: #02e342;
-	--accent-other: #166CFF;
-	--accent-foreground: #fff;
+	--accent: #166CFF;
+	--accent-other: #ffffff;
 }
 body {
 	margin: 0;
@@ -24,5 +23,6 @@ p {
 .button {
 	cursor: pointer;
 	background: var(--accent);
-	color: var(--accent-foreground);
+	color: var(--accent-other);
+	border-radius: 0.3rem;
 }

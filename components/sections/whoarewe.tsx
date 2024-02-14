@@ -1,6 +1,5 @@
 import LeftRight from "../leftright";
 import Image from "next/image";
-import Img from "@/images/wallpapers/who-are-we.png";
 import Header from "../header";
 import Description from "../description";
 
@@ -8,7 +7,7 @@ export default function WhoAreWe() {
   return (
     <div className="howitworks relative">
       <LeftRight className="max-md:flex max-md:flex-col-reverse">
-        <Image className="max-md:mt-12" width={700} src={Img} alt="image" />
+        {/* <Image className="max-md:mt-12" width={700} src={Img} alt="image" /> */}
         <div>
 			<Header>Who Are We</Header>
 			<br />

@@ -1,30 +1,30 @@
-import Image, { StaticImageData } from "next/image";
-import Header from "./header";
 import Description from "./description";
 import { motion, useAnimate } from "framer-motion";
+import React from "react";
 
 export default function AfterIntroCard({ data, index }: { 
 	data: {
 		header: string;
 		description: string;
-		img: StaticImageData;
+		img: any;
 	},
 	index: number
 }) {
 	const [scope, animate] = useAnimate();
 	return (
 		<motion.div
-		className="grid bg-[var(--foreground)] font-[var(--base)] p-[15%] sm:rounded-bl-[50px] shadow-md"
-		ref={scope}
+		className="w-[29%]"
+		ref={scope} 
 		initial={{ x: 100, opacity: 0 }}
 		onViewportEnter={() => animate(scope.current, { x: 0, opacity: 100 }, { delay: 0.2 + index / 10})}
 		>
-			<div className="flex flex-col items-center">
-				<Image className="m-auto" width={60} height={60} src={data.img} alt="icon" />
-				<br />
-				<Header className="!text-3xl flex-grow">{data.header}</Header>
+			<div className="flex justify-center">
+      			{React.createElement(data.img,  { size: 80,  })}
 			</div>
-			<Description className="text-center">{data.description}</Description>
+			<br />
+			<Description className="text-center !text-2xl flex-grow mb-4">{data.header}</Description>
+			<div className="text-center">{data.description}</div>
+
 		</motion.div>
 	)
 }

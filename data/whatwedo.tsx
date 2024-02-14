@@ -1,6 +1,4 @@
-import Web from "@/images/icons/computer.png";
-import Mobile from "@/images/icons/iphone.png";
-import Design from "@/images/icons/design.png";
+import {  FcFilmReel, FcIphone, FcMindMap } from "react-icons/fc";
 
 export const whatwedo = {
 	title: "What We Do",
@@ -9,17 +7,17 @@ export const whatwedo = {
 	  {
 		header: "Web Applications",
 		description: "Develop custom web applications with user-friendly interfaces, catering to specific client needs.",
-		image: Web,
+		img: FcMindMap,
 	  },
 	  {
 		header: "Mobile Applications",
 		description: "Create mobile applications for Android and iOS platforms, focusing on responsive design and engaging user interfaces.",
-		image: Mobile,
+		img: FcIphone,
 	  },
 	  {
 		header: "UX/UI Designs",
 		description: "Offer expert UX/UI design services to elevate overall user experience, ensuring visually appealing and functional interfaces.",
-		image: Design,
+		img: FcFilmReel,
 	  },
 	],
 }

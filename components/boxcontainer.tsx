@@ -3,14 +3,13 @@ import Box from "./box";
 import { boxData } from "@/data/boxdata";
 import DownUpMotion from "./downupmotion";
 import Header from "./header";
+import { IconType } from "react-icons";
 
 export type boxDataType = {
 		header: string,
 		description: string,
-		img: StaticImageData
+		img: IconType,
 }
-
-
 export default function BoxContainer() {
 	return (
 		<section>

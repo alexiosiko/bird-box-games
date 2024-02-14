@@ -7,7 +7,7 @@ import wallpaperSVG from "@/images/wallpapers/whole.svg"
 
 const inter = Open_Sans({
 	subsets: ['latin'],
-	weight: '500',
+	weight: 'variable',
 });
 
 export const metadata: Metadata = {
@@ -23,7 +23,6 @@ export default function RootLayout({
 	return (
 		<html lang="en">
 			<body className={`${inter.className} bg-[var(--background)] text-[var(--base)]`}>
-				<Wallpaper className='z-10 top-[100vh] !h-[5000px]' svg={wallpaperSVG} />
 				<Nav />
 				{children}
 			</body>

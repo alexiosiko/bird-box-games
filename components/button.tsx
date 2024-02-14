@@ -5,7 +5,7 @@ export default function Button({ children, className }: {
 	className?: string,
 }) {
 	return (
-		<div className={`${className} font-extrabold`}>
+		<div className={`${className} text-[var(--accent-other)] font-extrabold`}>
 			{children}
 		</div>
 	)
