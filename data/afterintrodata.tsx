@@ -1,5 +1,4 @@
-import { FaBeer } from "react-icons/fa";
-import { FcApproval, FcBusinessman, FcHome, FcMindMap, FcPhone, FcPhoneAndroid, FcPieChart } from "react-icons/fc";
+import { FcApproval, FcBusinessman, FcHome, FcPhoneAndroid, FcPieChart } from "react-icons/fc";
 
 export const afterIntroData = [
   {
