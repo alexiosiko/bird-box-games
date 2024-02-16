@@ -19,7 +19,7 @@ const TextTransition = () => {
 
     const intervalId = setInterval(() => {
       transitionNextText();
-    }, 3000);
+    }, 2300);
 
     return () => clearInterval(intervalId);
   }, [texts]);

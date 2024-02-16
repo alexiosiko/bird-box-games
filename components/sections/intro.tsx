@@ -1,41 +1,47 @@
-import { motion, useAnimation } from "framer-motion";
-import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+import ScrollLink from "../scrolllink";
+import Description from "../description";
+import Accent from "../accent";
+import Br from "../br";
+import TextTransition from "../texttransition";
 
-const TextTransition = () => {
-  const texts = [
-    "Where ideas meet precision in development.",
-    "Get the results that you are looking for.",
-    "Affordable solutions with experienced developers.",
-  ];
-  const [currentTextIndex, setCurrentTextIndex] = useState(0);
-  const [showInitialText, setShowInitialText] = useState(true);
-  const controls = useAnimation();
+export default function Intro() {
 
-  useEffect(() => {
-    const transitionNextText = async () => {
-      await controls.start({ opacity: 0, y: -20 });
-      setCurrentTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
-      await controls.start({ opacity: 1, y: 0 });
-    };
-
-    const intervalId = setInterval(() => {
-      setShowInitialText(false);
-      transitionNextText();
-    }, 3000);
-
-    return () => clearInterval(intervalId);
-  }, [controls, texts]);
-
-  return (
-    <motion.div
-      className="text-4xl max-md:text-center"
-      animate={controls}
-      initial={{ opacity: showInitialText ? 1 : 0, y: showInitialText ? 0 : -20 }}
-      transition={{ duration: 0.5 }}
-    >
-      {showInitialText ? "Welcome to Dev Olympus" : texts[currentTextIndex]}
-    </motion.div>
-  );
-};
-
-export default TextTransition;
+	return (
+		<div className="h-[100vh] flex items-center">
+			<motion.div
+				initial={{ opacity: 0, y: -100 }}
+				animate={{ opacity: 100, y: 0 }}
+				transition={{ delay: 0.6 }}
+				>
+				<div>
+					<Br size={1} />
+					<div className="md:text-8xl text-5xl max-md:text-center font-bold leading-snug text-[var(--title)]">
+						We make your 
+						<Accent> dreams </Accent>
+						come to 
+						<Accent> life</Accent>.
+					</div>
+					<Br size={1} />
+					<TextTransition />
+					<Br size={2} />
+					{/* <Description className="mt-4 mb-12 text-[var(--base)]">
+						We design, develop, and deploy software development products to our most valued customers.
+					</Description> */}
+					<div className="flex max-md:justify-center">
+						<ScrollLink to="contact" className="button static">
+							Contact Us
+						</ScrollLink>
+						<ScrollLink to="contact" className=" static">
+							Learn More
+						</ScrollLink>
+					</div>
+				</div>
+				{/* <div className="max-md:hidden w-1/2">
+					<Image src={ScreenImg} alt="development-photo" className="mt-[-100px]"/>
+				</div> */}
+				
+			</motion.div>
+		</div>
+	)
+}
