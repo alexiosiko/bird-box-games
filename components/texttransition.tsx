@@ -27,7 +27,7 @@ const TextTransition = () => {
   return (
     <motion.div
       className="text-4xl max-md:text-center"
-    //   animate={controls}
+      animate={controls}
       initial={{ opacity: 0, y: -20 }}
       transition={{ duration: 0.5 }}
     >
