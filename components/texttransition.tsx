@@ -10,19 +10,19 @@ const TextTransition = () => {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
   const controls = useAnimation();
 
-  useEffect(() => {
-    const transitionNextText = async () => {
-      await controls.start({ opacity: 0, y: -20 });
-      setCurrentTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
-      await controls.start({ opacity: 1, y: 0 });
-    };
+//   useEffect(() => {
+//     const transitionNextText = async () => {
+//       await controls.start({ opacity: 0, y: -20 });
+//       setCurrentTextIndex((prevIndex) => (prevIndex + 1) % texts.length);
+//       await controls.start({ opacity: 1, y: 0 });
+//     };
 
-    const intervalId = setInterval(() => {
-      transitionNextText();
-    }, 3000);
+//     const intervalId = setInterval(() => {
+//       transitionNextText();
+//     }, 3000);
 
-    return () => clearInterval(intervalId);
-  }, [texts]);
+//     return () => clearInterval(intervalId);
+//   }, [texts]);
 
   return (
     <motion.div
