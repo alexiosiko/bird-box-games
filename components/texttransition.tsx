@@ -8,7 +8,7 @@ const TextTransition = () => {
     "Affordable solutions with experienced developers.",
   ];
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
-//   const controls = useAnimation();
+  const controls = useAnimation();
 
 //   useEffect(() => {
 //     const transitionNextText = async () => {
