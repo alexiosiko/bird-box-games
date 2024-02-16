@@ -1,6 +1,5 @@
-import { motion } from "framer-motion";
+import { motion, useScroll } from "framer-motion";
 import ScrollLink from "../scrolllink";
-import Description from "../description";
 import Accent from "../accent";
 import Br from "../br";
 import TextTransition from "../texttransition";

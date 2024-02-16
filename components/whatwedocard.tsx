@@ -17,7 +17,7 @@ export default function WhatWeDoCard({ item, index } : {
 	return (
 		<motion.div key={index} className={`flex items-center gap-8 p-6 rounded-md`}>
 			<div className="flex justify-center">
-				{React.createElement(item.img,  { size: 60,  })}
+				{React.createElement(item.img,  { size: 70,  })}
 			</div>
 			<div>
 				<SubTitle className=" !text-left">{item.header}</SubTitle>

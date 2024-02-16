@@ -16,9 +16,7 @@ export default function Home() {
 			<Intro />
 			<Br size={4} />
 			<AfterIntro />
-			{/* <Br size={6} />
-			<WhoAreWe /> */}
-			<Br size={8}/>
+			<Br size={4}/>
 			<WhatWeDo />
 			<Br size={4}/>
 			<BoxContainer />
