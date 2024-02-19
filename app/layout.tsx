@@ -1,32 +1,37 @@
-import type { Metadata } from 'next'
-import './globals.css'
-import Nav from '@/components/sections/nav'
-import { Open_Sans } from 'next/font/google'
-import Wallpaper from '@/components/wallpaper';
-import wallpaperSVG from "@/images/wallpapers/whole.svg"
+"use client";
 
-const inter = Open_Sans({
-	subsets: ['latin'],
-	weight: 'variable',
-});
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import ScrollToTop from "@/components/ScrollToTop";
+import { Inter } from "next/font/google";
+import "node_modules/react-modal-video/css/modal-video.css";
+import "../styles/index.css";
 
-export const metadata: Metadata = {
-  title: 'Dev Olympus',
-  description: 'A software company based in Vancouver that develops applications',
-}
+const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
-	children,
+  children,
 }: {
-	children: React.ReactNode
+  children: React.ReactNode;
 }) {
-	return (
-		<html lang="en">
-			<body className={`${inter.className} bg-[var(--background)] text-[var(--base)]`}>
-				<Nav />
-				{children}
-			</body>
+  return (
+    <html suppressHydrationWarning lang="en">
+      {/*
+        <head /> will contain the components returned by the nearest parent
+        head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
+      */}
+      <head />
 
-		</html>
-	)
+      <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
+        <Providers>
+          <Header />
+          {children}
+          <Footer />
+          <ScrollToTop />
+        </Providers>
+      </body>
+    </html>
+  );
 }
+
+import { Providers } from "./providers";
