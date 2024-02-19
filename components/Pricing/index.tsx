@@ -62,43 +62,37 @@ const Pricing = () => {
 
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
           <PricingBox
-            packageName="Lite"
+            packageName="BASIC"
             price={isMonthly ? "40" : "120"}
             duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            subtitle="Perfect for online landing pages to advertise a business, portfolio, or service."
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="inactive" />
-            <OfferList text="Free Lifetime Updates" status="inactive" />
+            <OfferList text="Single-Page Application" status="active" />
+            <OfferList text="Database Implementation" status="inactive" />
+            <OfferList text="User Authentications" status="inactive" />
+            <OfferList text="Payment Processing" status="inactive" />
           </PricingBox>
           <PricingBox
-            packageName="Basic"
+            packageName="STANDARD"
             price={isMonthly ? "399" : "789"}
             duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            subtitle="Perfect for a medium size application that features storing data."
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-            <OfferList text="Free Lifetime Updates" status="inactive" />
+            <OfferList text="Multi-Page Application" status="active" />
+            <OfferList text="Database Implementation" status="active" />
+            <OfferList text="User Authentications" status="inactive" />
+            <OfferList text="Payment Processing" status="inactive" />
           </PricingBox>
           <PricingBox
             packageName="Plus"
             price={isMonthly ? "589" : "999"}
             duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            subtitle="Develop big enterprise web based software or web application or mobile app."
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-            <OfferList text="Free Lifetime Updates" status="active" />
+            <OfferList text="Multi-Page Application" status="active" />
+            <OfferList text="Database Implementation" status="active" />
+            <OfferList text="User Authentications" status="active" />
+            <OfferList text="Payment Processing" status="active" />
           </PricingBox>
         </div>
       </div>

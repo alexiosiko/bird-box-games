@@ -1,43 +1,58 @@
+"use client"
+
 import Link from "next/link";
+import { motion } from "framer-motion";
+import Animate from "../Animations/animate";
 
 const Hero = () => {
   return (
     <>
       <section
         id="home"
-        className="dark:bg-gray-dark relative z-10 overflow-hidden bg-white pb-16 pt-[120px] md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
+        className="dark:bg-gray-dark relative z-10 overflow-hidden h-[100vh] flex flex-col justify-center bg-white pb-16 pt-[120px] md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]"
       >
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
               <div
                 className="wow fadeInUp mx-auto max-w-[800px] text-center"
-                data-wow-delay=".2s"
               >
-                <h1 className="mb-5 font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-6xl md:leading-tight">
-				We Make Your
-				<span className="text-primary"> Dreams </span>
-				Come To 
-				<span className="text-primary"> Life. </span>
+				<Animate
+				delay={0.3}
+					>
+					<h1 className="mb-5 font-bold leading-tight text-black dark:text-white sm:text-4xl sm:leading-tight md:text-6xl md:leading-tight">
+						We Make Your
+						<span className="text-primary"> Dreams </span>
+						Come To 
+						<span className="text-primary"> Life. </span>
 
-                </h1>
-                <p className="dark:text-body-color-dark mb-12 text-base !leading-relaxed text-body-color sm:text-lg md:text-xl">
-				At DevOlympus, we&apos;re the wizards behind websites and apps. With over 4 years of experience, we turn your concepts into digital reality. Whether you&apos;re starting a business or need a digital upgrade, we&apos;ve got the tech magic to bring your ideas to life. Our skilled team is here to make your online journey smooth and successful. Let&apos;s build something amazing together!
-                </p>
-                <div className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
+					</h1>
+					</Animate>
+					<Animate
+						delay={0.5}
+					>
+
+						<p className="dark:text-body-color-dark mb-12 text-base !leading-relaxed text-body-color sm:text-lg md:text-xl">
+						At DevOlympus, we&apos;re the wizards behind websites and apps. With over 4 years of experience, we turn your concepts into digital reality. Whether you&apos;re starting a business or need a digital upgrade, we&apos;ve got the tech magic to bring your ideas to life. Our skilled team is here to make your online journey smooth and successful. Let&apos;s build something amazing together!
+						</p>
+					</Animate>
+                <Animate
+				initial={{ y: 100, opacity: 0}}
+				delay={1}
+				className="flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0">
                   <Link
                     href="https://nextjstemplates.com/templates/saas-starter-startup"
                     className="rounded-sm bg-primary px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-primary/80"
-                  >
+					>
                     Get Started
                   </Link>
                   <Link
                     href="https://github.com/NextJSTemplates/startup-nextjs"
                     className="inline-block rounded-sm bg-black px-8 py-4 text-base font-semibold text-white duration-300 ease-in-out hover:bg-black/90 dark:bg-white/10 dark:text-white dark:hover:bg-white/5"
-                  >
+					>
                     Learn More
                   </Link>
-                </div>
+                </Animate>
               </div>
             </div>
           </div>

@@ -16,8 +16,7 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <>
-      <ScrollUp />
+    <div className="overflow-x-hidden">
       <Hero />
       <Features />
       <Video />
@@ -26,6 +25,6 @@ export default function Home() {
       <Testimonials />
       <Pricing />
       <Contact />
-    </>
+    </div>
   );
 }
