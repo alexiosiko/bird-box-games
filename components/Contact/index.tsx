@@ -160,7 +160,7 @@ const Contact = () => {
 			</div>
 		)}
 		<p className="mb-4 text-lg font-medium text-dark dark:text-white">Or you can email us directly at 
-		<a  href="mailto:devolympus@hotmail.com" className="text-primary">devolympus@hotmail.com</a></p>
+		<a  href="mailto:devolympus@hotmail.com" className=" text-center text-primary">devolympus@hotmail.com</a></p>
     </section>
   );
 };
