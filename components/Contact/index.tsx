@@ -124,6 +124,7 @@ const Contact = () => {
 					Product Description
 					</label>
 					<textarea
+					required
 					name="description"
 					rows={5}
 					placeholder="Tell us what application you&apos;re looking for"
