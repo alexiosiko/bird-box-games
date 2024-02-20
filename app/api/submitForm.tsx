@@ -11,11 +11,18 @@ export async function sendEmail(data: {
     expectations: string;
 }): Promise<any> {
 	
+		var template_params = {
+			"name": data.name, 
+			"plan": data.plan, 
+			"email": data.email, 
+			"description": data.description, 
+			"expectations": data.expectations, 
+		}
 	// Example: Send an email using emailjs
 	emailjs.send(
 		process.env.serviceID,
 		process.env.templateID,
-		data,
+		template_params,
 		process.env.userID
 	).then(res => {
 		console.log("SUCCESS", res.status, res.text);
