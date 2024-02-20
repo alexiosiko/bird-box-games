@@ -63,8 +63,11 @@ const Pricing = () => {
           </div>
         </Animate>
 
-        <Animate className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
-          <PricingBox
+        <section className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
+
+
+          <Animate delay={0.3}>
+		  <PricingBox
             packageName="BASIC"
             price={isMonthly ? "40" : "120"}
             duration={isMonthly ? "mo" : "yr"}
@@ -75,7 +78,10 @@ const Pricing = () => {
             <OfferList text="User Authentications" status="inactive" />
             <OfferList text="Payment Processing" status="inactive" />
           </PricingBox>
-          <PricingBox
+		  </Animate>
+          <Animate delay={0.6}>
+
+		  <PricingBox
             packageName="STANDARD"
             price={isMonthly ? "399" : "789"}
             duration={isMonthly ? "mo" : "yr"}
@@ -86,7 +92,10 @@ const Pricing = () => {
             <OfferList text="User Authentications" status="inactive" />
             <OfferList text="Payment Processing" status="inactive" />
           </PricingBox>
-          <PricingBox
+          </Animate>
+
+          <Animate delay={0.9}>
+		  <PricingBox
             packageName="Plus"
             price={isMonthly ? "589" : "999"}
             duration={isMonthly ? "mo" : "yr"}
@@ -97,7 +106,8 @@ const Pricing = () => {
             <OfferList text="User Authentications" status="active" />
             <OfferList text="Payment Processing" status="active" />
           </PricingBox>
-        </Animate>
+		  </Animate>
+        </section>
       </div>
 
       <div className="absolute bottom-0 left-0 z-[-1]">
