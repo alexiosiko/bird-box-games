@@ -10,14 +10,17 @@ export async function sendEmail(data: {
     description: string;
     expectations: string;
 }): Promise<any> {
+
+	emailjs.init(process.env.publicKEY);
+
 	
-		var template_params = {
-			"name": data.name, 
-			"plan": data.plan, 
-			"email": data.email, 
-			"description": data.description, 
-			"expectations": data.expectations, 
-		}
+	var template_params = {
+		"name": data.name, 
+		"plan": data.plan, 
+		"email": data.email, 
+		"description": data.description, 
+		"expectations": data.expectations, 
+	}
 	// Example: Send an email using emailjs
 	emailjs.send(
 		process.env.serviceID,
