@@ -3,6 +3,7 @@ import { useState } from "react";
 import SectionTitle from "../Common/SectionTitle";
 import OfferList from "./OfferList";
 import PricingBox from "./PricingBox";
+import Animate from "../Animations/animate";
 
 const Pricing = () => {
   const [isMonthly, setIsMonthly] = useState(true);
@@ -10,14 +11,16 @@ const Pricing = () => {
   return (
     <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
-        <SectionTitle
-          title="Simple and Affordable Pricing"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
-          center
-          width="665px"
-        />
+		<Animate>
+			<SectionTitle
+			title="Simple and Affordable Pricing"
+			paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+			center
+			width="665px"
+			/>
+		</Animate>
 
-        <div className="w-full">
+        <Animate className="w-full">
           <div
             className="wow fadeInUp mb-8 flex justify-center md:mb-12 lg:mb-16"
             data-wow-delay=".1s"
@@ -58,9 +61,9 @@ const Pricing = () => {
               Yearly
             </span>
           </div>
-        </div>
+        </Animate>
 
-        <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
+        <Animate className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
           <PricingBox
             packageName="BASIC"
             price={isMonthly ? "40" : "120"}
@@ -94,7 +97,7 @@ const Pricing = () => {
             <OfferList text="User Authentications" status="active" />
             <OfferList text="Payment Processing" status="active" />
           </PricingBox>
-        </div>
+        </Animate>
       </div>
 
       <div className="absolute bottom-0 left-0 z-[-1]">
