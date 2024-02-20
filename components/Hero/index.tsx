@@ -33,7 +33,7 @@ const Hero = () => {
 					>
 
 						<p className="dark:text-body-color-dark mb-12 text-base !leading-relaxed text-body-color sm:text-lg md:text-xl">
-						At DevOlympus, we&apos;re the wizards behind websites and apps. With over 4 years of experience, we turn your concepts into digital reality. Whether you&apos;re starting a business or need a digital upgrade, we&apos;ve got the tech magic to bring your ideas to life. Our skilled team is here to make your online journey smooth and successful. Let&apos;s build something amazing together!
+						At DevOlympus, we&apos;re the wizards behind websites and apps. With over 20 years of experience, we turn your concepts into digital reality. Whether you&apos;re starting a business or need a digital upgrade, we&apos;ve got the tech magic to bring your ideas to life. Our skilled team is here to make your online journey smooth and successful. Let&apos;s build something amazing together!
 						</p>
 					</Animate>
                 <Animate

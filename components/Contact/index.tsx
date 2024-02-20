@@ -1,6 +1,22 @@
+"use client"
+
+import { sendEmail } from "@/app/api/submitForm";
 import Animate from "../Animations/animate";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
+	async function handleOnSubmi(e: any) {
+		e.preventDefault();
+		const data = {
+			name: e.target.name.value as string,
+			plan: e.target.plan.value as string,
+			email: e.target.email.value as string,
+			description: e.target.description.value as string,
+			expectations: e.target.expectations.value as string,
+		}
+		sendEmail(data).then(res => console.log(res));
+	}
+
   return (
     <section id="contact" className="py-16 md:py-20 lg:py-28">
 		<Animate className="w-full px-4 m-auto max-w-2xl">
@@ -15,7 +31,7 @@ const Contact = () => {
 			<p className="mb-12 text-base font-medium text-body-color">
 			Our support team will get back to you as soon as we can via email.
 			</p>
-			<form className="space-y-4">
+			<form onSubmit={handleOnSubmi} className="space-y-4">
 				<div className="sm:flex gap-4 max-sm:space-y-4">
 					<div>
 						<label
@@ -25,6 +41,7 @@ const Contact = () => {
 						Your Name
 						</label>
 						<input
+						name="name"
 						required
 						type="text"
 						placeholder="Enter your name"
@@ -39,6 +56,7 @@ const Contact = () => {
 						Your Email
 						</label>
 						<input
+							name="email"
 							required
 							type="email"
 							placeholder="Enter your email"
@@ -52,13 +70,14 @@ const Contact = () => {
 						Choose Your Plan
 						</label>
 						<select
+						name="plan"
 							required
 							id="plan"
 							className="border-stroke dark:text-body-color-dark dark:shadow-two h-[50px] rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none w-full"
 						>
-						<option value="basic">Basic Plan</option>
-						<option value="pro">Pro Plan</option>
-						<option value="enterprise">Enterprise Plan</option>
+							<option value="basic">Basic Plan</option>
+							<option value="pro">Standard Plan</option>
+							<option value="enterprise">Enterprise Plan</option>
 						</select>
 					</div>
 					<div className="w-full">
@@ -69,6 +88,7 @@ const Contact = () => {
 						Project Deployment Expectations
 						</label>
 						<input
+							name="expectations"
 							required
 							type="timeline"
 							placeholder="e.g. 1 month from today"
@@ -85,7 +105,7 @@ const Contact = () => {
 					Product Description
 					</label>
 					<textarea
-					name="message"
+					name="description"
 					rows={5}
 					placeholder="Tell us what application you&apos;re looking for"
 					className="border-stroke dark:text-body-color-dark dark:shadow-two w-full resize-none rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"

@@ -49,7 +49,8 @@ const Testimonials = () => {
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
           {testimonialData.map((testimonial, index: number) => (
 			<Animate
-			delay={index / 3}>
+				key={index}
+				delay={index / 3}>
             	<SingleTestimonial key={testimonial.id} testimonial={testimonial} />
 			</Animate>
           ))}
