@@ -10,7 +10,7 @@ export async function sendEmail(data: {
     expectations: string;
 }): Promise<any> {
 	try {
-		const resend = new Resend('re_7Q8Qd9Q4_NJGnaNHUGqmCUYeojPKrxmx3');
+		const resend = new Resend(process.env.emailAPIKey);
 
 		resend.emails.send({
 			from: 'onboarding@resend.dev',
