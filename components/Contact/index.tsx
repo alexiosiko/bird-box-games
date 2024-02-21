@@ -43,7 +43,8 @@ const Contact = () => {
 	  };
 
   return (
-    <section id="contact" className="py-16 md:py-20 lg:py-28">
+    <section id="contact" className="relative z-10 py-16 md:py-20 lg:py-28">
+
 		<Animate className="w-full px-4 m-auto max-w-2xl">
 		<div
 			className="  shadow-three dark:bg-gray-dark mb-12 rounded-sm bg-white px-8 py-11 sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
@@ -166,7 +167,7 @@ const Contact = () => {
 		<Animate className="flex justify-center ">
 			<p className="mb-4 text-lg font-medium text-dark dark:text-white">
 				Or you can email us directly at
-				<p  className="inline text-primary text-lg font-medium"> devolympus@hotmail.com</p>
+				<a href="mailto:devolympus@hotmail.com" className="inline text-primary text-lg font-medium"> devolympus@hotmail.com</a>
 			</p>
 		</Animate>
     </section>

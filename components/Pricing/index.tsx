@@ -1,4 +1,5 @@
 "use client";
+
 import { useState } from "react";
 import SectionTitle from "../Common/SectionTitle";
 import OfferList from "./OfferList";
@@ -6,8 +7,6 @@ import PricingBox from "./PricingBox";
 import Animate from "../Animations/animate";
 
 const Pricing = () => {
-  const [isMonthly, setIsMonthly] = useState(true);
-
   return (
     <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
@@ -20,7 +19,7 @@ const Pricing = () => {
 			/>
 		</Animate>
 
-        <Animate className="w-full">
+        {/* <Animate className="w-full">
           <div
             className="wow fadeInUp mb-8 flex justify-center md:mb-12 lg:mb-16"
             data-wow-delay=".1s"
@@ -61,7 +60,7 @@ const Pricing = () => {
               Yearly
             </span>
           </div>
-        </Animate>
+        </Animate> */}
 
         <section className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
 
@@ -69,8 +68,7 @@ const Pricing = () => {
           <Animate delay={0.3}>
 		  <PricingBox
             packageName="BASIC"
-            price={isMonthly ? "40" : "120"}
-            duration={isMonthly ? "mo" : "yr"}
+            price="$95 - $145"
             subtitle="Perfect for online landing pages to advertise a business, portfolio, or service."
           >
             <OfferList text="Single-Page Application" status="active" />
@@ -82,9 +80,9 @@ const Pricing = () => {
           <Animate delay={0.6}>
 
 		  <PricingBox
+		  className="md:scale-110"
             packageName="STANDARD"
-            price={isMonthly ? "399" : "789"}
-            duration={isMonthly ? "mo" : "yr"}
+			price="$295 - $595"
             subtitle="Perfect for a medium size application that features storing data."
           >
             <OfferList text="Multi-Page Application" status="active" />
@@ -96,9 +94,8 @@ const Pricing = () => {
 
           <Animate delay={0.9}>
 		  <PricingBox
-            packageName="Plus"
-            price={isMonthly ? "589" : "999"}
-            duration={isMonthly ? "mo" : "yr"}
+            packageName="PRO"
+			price="$1445 - $2495"
             subtitle="Develop big enterprise web based software or web application or mobile app."
           >
             <OfferList text="Multi-Page Application" status="active" />
