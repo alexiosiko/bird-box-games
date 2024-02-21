@@ -9,9 +9,10 @@ const Contact = () => {
 	const [isConfirmationOpen, setConfirmationOpen] = useState(false);
 	async function handleOnSubmit(e: any) {
 		e.preventDefault();
-		if (sentStatus == "Successfully Sent Quote!")
-			return;
-
+		if (sentStatus == "Successfully Sent Quote!" || sentStatus == "Working...")
+		return;
+		setSentStatus(() => "Working...");
+	
 		const data = {
 			name: e.target.name.value as string,
 			plan: e.target.plan.value as string,
@@ -25,7 +26,10 @@ const Contact = () => {
 			} else {
 				setSentStatus("Something Went Wrong!");
 			}
-		}).catch(error => console.log(error));
+		}).catch(error => {
+			setSentStatus("Something Went Wrong!");
+			console.log(error)
+		});
 
 	}
 	const handleConfirmSubmit = () => {
@@ -135,6 +139,7 @@ const Contact = () => {
 				</div>
 				<button className={`
 				${sentStatus == "Request Quote" && "bg-primary"}
+				${sentStatus == "Working..." && "bg-orange-400"}
 				${sentStatus == "Something went wrong!" && "bg-red-400"}
 				${sentStatus == "Successfully Sent Quote!" && "bg-green-400"}
 				shadow-submit dark:shadow-submit-dark rounded-sm px-9 py-4 text-base font-medium text-white duration-300 w-full`} >
