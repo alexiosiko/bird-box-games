@@ -1,10 +1,10 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
+import ScrollLink from "../ScrollToTop/ScrollLink";
 
 const Header = () => {
 	// Navbar toggle
@@ -49,12 +49,6 @@ const Header = () => {
 		>
 			<div className="relative m-auto flex items-center justify-center">
 				<div className="w-60 max-w-full px-4 xl:mr-12">
-				<Link
-					href="/"
-					className={`header-logo block w-full ${
-					sticky ? "py-5 lg:py-2" : "py-8"
-					} `}
-				>
 					<Image
 					src="/images/logo/dev-olympus-logo-black.png"
 					alt="logo"
@@ -69,7 +63,6 @@ const Header = () => {
 					height={30}
 					className="hidden dark:block"
 					/>
-				</Link>
 				</div>
 				<div className="flex w-full items-center justify-between px-4">
 				<div>
@@ -106,17 +99,17 @@ const Header = () => {
 					<ul className="block lg:flex lg:space-x-12">
 						{menuData.map((menuItem, index) => (
 						<li key={index} className="group relative">
-							{menuItem.path ? (
-							<Link
-								href={menuItem.path}
+							{menuItem.to ? (
+							<ScrollLink
+								to={menuItem.to}
 								className={`flex py-2 text-base lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
-								usePathName === menuItem.path
+								usePathName === menuItem.to
 									? "text-primary dark:text-white"
 									: "text-dark hover:text-primary dark:text-white/70 dark:hover:text-white"
 								}`}
 							>
 								{menuItem.title}
-							</Link>
+							</ScrollLink>
 							) : (
 							<>
 							

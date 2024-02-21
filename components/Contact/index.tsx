@@ -10,7 +10,7 @@ const Contact = () => {
 	async function handleOnSubmit(e: any) {
 		e.preventDefault();
 		if (sentStatus == "Successfully Sent Quote!" || sentStatus == "Working...")
-		return;
+			return;
 		setSentStatus(() => "Working...");
 	
 		const data = {
@@ -50,7 +50,7 @@ const Contact = () => {
 		<div
 			className="  shadow-three dark:bg-gray-dark mb-12 rounded-sm bg-white px-8 py-11 sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
 			data-wow-delay=".15s">
-			<h2 className="mb-3 text-2xl font-bold text-black dark:text-white sm:text-3xl lg:text-2xl xl:text-3xl">
+			<h2 className="mb-3 text-6xl font-bold text-black dark:text-white sm:text-3xl lg:text-2xl xl:text-3xl">
 			Let&apos;s get Started and Request a Quote!
 			</h2>
 			<p className="mb-12 text-base font-medium text-body-color">
@@ -130,11 +130,12 @@ const Contact = () => {
 					Product Description
 					</label>
 					<textarea
-					required
-					name="description"
-					rows={5}
-					placeholder="Tell us what application you&apos;re looking for"
-					className="border-stroke dark:text-body-color-dark dark:shadow-two w-full resize-none rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
+						minLength={20}
+						required
+						name="description"
+						rows={5}
+						placeholder="Tell us what application you&apos;re looking for"
+						className="border-stroke dark:text-body-color-dark dark:shadow-two w-full resize-none rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
 					></textarea>
 				</div>
 				<button className={`
