@@ -33,14 +33,17 @@ export async function sendEmail(data: {
 					expectation: ${data.expectations}
 				</p>
 				`
-		});
+		})
+		.then(res => console.log(res, "yes"))
+		.catch(err => console.log(err, "cath"));
 
 		console.log("Worked!");
-		return "Success";
+		return { ok: true, message: "Email send successfully"};
 
 	} catch (error) { 
 		console.log(error);
-		return "Error sending quote";
+		return { ok: false, message: "Email send unsuccessfully"};
+
 	}
 
 }

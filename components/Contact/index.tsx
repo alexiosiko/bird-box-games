@@ -2,7 +2,6 @@
 
 import { sendEmail } from "@/app/api/sendEmail";
 import Animate from "../Animations/animate";
-import { Resend } from 'resend';
 import { useState } from "react";
 
 const Contact = () => {
@@ -20,9 +19,14 @@ const Contact = () => {
 			description: e.target.description.value as string,
 			expectations: e.target.expectations.value as string,
 		}
-		sendEmail(data).then(res => console.log(res));
+		sendEmail(data).then(res => {
+			if (res.ok) {
+				setSentStatus("Successfully Sent Quote!");
+			} else {
+				setSentStatus("Successfully Sent Quote!");
+			}
+		}).catch(error => console.log(error));
 
-		setSentStatus("Successfully Sent Quote!");
 	}
 	const handleConfirmSubmit = () => {
 		// Close the confirmation modal
