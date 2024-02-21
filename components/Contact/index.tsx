@@ -23,17 +23,14 @@ const Contact = () => {
 			if (res.ok) {
 				setSentStatus("Successfully Sent Quote!");
 			} else {
-				setSentStatus("Successfully Sent Quote!");
+				setSentStatus("Something Went Wrong!");
 			}
 		}).catch(error => console.log(error));
 
 	}
 	const handleConfirmSubmit = () => {
-		// Close the confirmation modal
+
 		setConfirmationOpen(false);
-	
-		// Perform the form submission
-		// sendEmail(formData).then((res) => console.log(res));
 	
 		setSentStatus("Successfully Sent Quote!");
 	  };
@@ -136,7 +133,11 @@ const Contact = () => {
 					className="border-stroke dark:text-body-color-dark dark:shadow-two w-full resize-none rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none"
 					></textarea>
 				</div>
-				<button className={`${sentStatus != "Request Quote" && "!bg-green-400"} shadow-submit dark:shadow-submit-dark rounded-sm bg-primary px-9 py-4 text-base font-medium text-white duration-300 w-full hover:bg-primary/90`} >
+				<button className={`
+				${sentStatus == "Request Quote" && "bg-primary"}
+				${sentStatus == "Something went wrong!" && "bg-red-400"}
+				${sentStatus == "Successfully Sent Quote!" && "bg-green-400"}
+				shadow-submit dark:shadow-submit-dark rounded-sm px-9 py-4 text-base font-medium text-white duration-300 w-full`} >
 					{sentStatus}
 				</button>
 			</form>

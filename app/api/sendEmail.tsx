@@ -18,21 +18,17 @@ export async function sendEmail(data: {
             from: `Acme <onboarding@resend.dev>`,
             to: ['devolympus@hotmail.com'],
             subject: `Quote from ${data.name}`,
-            text: `<p>
-                        name: ${data.name}
-                    </p>
-                    <p>
-                        plan: ${data.plan}
-                    </p>
-                    <p>
-                        email: ${data.email}
-                    </p>
-                    <p>
-                        description: ${data.description}
-                    </p>
-                    <p>
-                        expectation: ${data.expectations}
-                    </p>`,
+            text: `
+                    name: ${data.name}
+                    
+					plan: ${data.plan}
+
+                    email: ${data.email}
+
+                    description: ${data.description}
+
+                    expectation: ${data.expectations}
+				`,
             headers: {
                 'X-Entity-Ref-ID': '123456789',
             },
