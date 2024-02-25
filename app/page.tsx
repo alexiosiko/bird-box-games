@@ -23,6 +23,7 @@ export default function Home() {
       <Testimonials />
       <Pricing />
       <Contact />
+		
     </div>
   );
 }

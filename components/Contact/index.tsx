@@ -22,7 +22,7 @@ const Contact = () => {
 		}
 		sendEmail(data).then(res => {
 			if (res.ok) {
-				setSentStatus("Successfully Sent Quote!");
+				setSentStatus("Successfully Requested Quote!");
 			} else {
 				setSentStatus("Something Went Wrong!");
 			}
@@ -36,7 +36,7 @@ const Contact = () => {
 
 		setConfirmationOpen(false);
 	
-		setSentStatus("Successfully Sent Quote!");
+		setSentStatus("Successfully Requested Quote!");
 	  };
 	  const handleCancelSubmit = () => {
 		// Close the confirmation modal
@@ -141,8 +141,8 @@ const Contact = () => {
 				<button className={`
 				${sentStatus == "Request Quote" && "bg-primary"}
 				${sentStatus == "Working..." && "bg-orange-400"}
-				${sentStatus == "Something went wrong!" && "bg-red-400"}
-				${sentStatus == "Successfully Sent Quote!" && "bg-green-400"}
+				${sentStatus == "Something Went Wrong!" && "bg-red-400"}
+				${sentStatus == "Successfully Requested Quote!" && "bg-green-400"}
 				shadow-submit dark:shadow-submit-dark rounded-sm px-9 py-4 text-base font-medium text-white duration-300 w-full`} >
 					{sentStatus}
 				</button>
