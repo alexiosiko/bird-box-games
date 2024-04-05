@@ -1,0 +1,6 @@
+.default {
+	/* Your default theme */
+	--background: red;
+	--foreground: black;
+	--primary: red;
+}
