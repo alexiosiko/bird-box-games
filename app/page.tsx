@@ -8,8 +8,8 @@ import Video from "@/components/Video";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-	title: 'Dev Olympus',
-	description: 'A software company based in Vancouver that develops applications',
+	title: 'PolyTech',
+	description: 'A software company based in Vancouver that develops mobile and web application for our clients',
   }
 
 export default function Home() {
