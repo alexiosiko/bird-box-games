@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://polytechdevelopment.com
+
+# Sitemaps
+Sitemap: https://polytechdevelopment.com/sitemap.xml
