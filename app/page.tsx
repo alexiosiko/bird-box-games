@@ -19,9 +19,8 @@ export default function Home() {
       <Features />
       <Video />
       <AboutSectionOne />
-      {/* <AboutSectionTwo /> */}
       <Testimonials />
-      <Pricing />
+      {/* <Pricing /> */}
       <Contact />
 		
     </div>

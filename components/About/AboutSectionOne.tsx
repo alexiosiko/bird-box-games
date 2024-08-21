@@ -27,7 +27,7 @@ const AboutSectionOne = () => {
 				className="w-full px-4 lg:w-1/2">
               <SectionTitle
                 title="Trusted and Affordable Solutions."
-                paragraph="At Dev Olympus, we pride ourselves on being transparent about our plans, pricing, and production processes. Our commitment to openness ensures that you have a clear understanding of what we offer. We believe in building trust through honesty and reliability. Explore our trustworthy and affordable solutions that prioritize your satisfaction."
+                paragraph="At Poly Tech, we pride ourselves on being transparent about our plans, pricing, and production processes. Our commitment to openness ensures that you have a clear understanding of what we offer. We believe in building trust through honesty and reliability. Explore our trustworthy and affordable solutions that prioritize your satisfaction."
                 mb="44px"
               />
 

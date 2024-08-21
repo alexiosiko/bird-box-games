@@ -1,7 +1,6 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
 import SectionTitle from "../Common/SectionTitle";
 import Animate from "../Animations/animate";
 
@@ -13,7 +12,7 @@ const Video = () => {
 		<Animate >
 			<SectionTitle
 			title="We are ready to help"
-			paragraph="Our team with over 20 years of combined experience are waiting to work and succeed with you!"
+			paragraph="Our team with over 10 years of combined experience are waiting to work and succeed with you!"
 			center
 			mb="80px"
 			/>

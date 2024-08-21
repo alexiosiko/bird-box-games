@@ -9,7 +9,7 @@ const testimonialData: Testimonial[] = [
     name: "John D",
     designation: "Founder @TailGrids",
     content:
-      "Dev Olympus brought our vision to life! Their precise attention to detail and unwavering commitment to quality set them apart. The team's expertise and seamless communication made the development process a breeze. We appreciate the enduring relationship we've built with Dev Olympus",
+      "Poly Tech brought our vision to life! Their precise attention to detail and unwavering commitment to quality set them apart. The team's expertise and seamless communication made the development process a breeze. We appreciate the enduring relationship we've built with Poly Tech",
     image: "/images/testimonials/auth-01.png",
     star: 5,
   },
@@ -18,7 +18,7 @@ const testimonialData: Testimonial[] = [
     name: "Devid Weilium",
     designation: "Founder @UIdeck",
     content:
-      "Trustworthy and reliable! Dev Olympus delivered our project on time and within budget. The level of transparency in their communication is commendable. Working with them was a stress-free experience, and the results surpassed our expectations. They truly go above and beyond.",
+      "Trustworthy and reliable! Poly Tech delivered our project on time and within budget. The level of transparency in their communication is commendable. Working with them was a stress-free experience, and the results surpassed our expectations. They truly go above and beyond.",
     image: "/images/testimonials/auth-02.png",
     star: 5,
   },
@@ -27,7 +27,7 @@ const testimonialData: Testimonial[] = [
     name: "Lethium Frenci",
     designation: "Founder @Lineicons",
     content:
-      "Affordable excellence! Dev Olympus provided cost-effective solutions without compromising quality. Their dedication to customer satisfaction is evident in every step of the process. We're grateful for the outstanding service and results, and our partnership continues to thrive.",
+      "Affordable excellence! Poly Tech provided cost-effective solutions without compromising quality. Their dedication to customer satisfaction is evident in every step of the process. We're grateful for the outstanding service and results, and our partnership continues to thrive.",
     image: "/images/testimonials/auth-03.png",
     star: 5,
   },
@@ -41,7 +41,7 @@ const Testimonials = () => {
 			
 			<SectionTitle
 			title="What Our Customers Say"
-			paragraph="Discover what our valued customers have to say about their experience with Dev Olympus. We take pride in building lasting relationships and exceeding expectations."
+			paragraph="Discover what our valued customers have to say about their experience with Poly Tech. We take pride in building lasting relationships and exceeding expectations."
 			center
 			/>
 		</Animate>

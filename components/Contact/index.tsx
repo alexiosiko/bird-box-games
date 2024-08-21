@@ -1,8 +1,8 @@
 "use client"
 
-import { sendEmail } from "@/app/api/sendEmail";
-import Animate from "../Animations/animate";
 import { useState } from "react";
+import axios from "axios";
+import Animate from "../Animations/animate";
 
 const Contact = () => {
 	const [sentStatus, setSentStatus] = useState("Request Quote");
@@ -15,21 +15,18 @@ const Contact = () => {
 	
 		const data = {
 			name: e.target.name.value as string,
-			plan: e.target.plan.value as string,
 			email: e.target.email.value as string,
 			description: e.target.description.value as string,
 			expectations: e.target.expectations.value as string,
 		}
-		sendEmail(data).then(res => {
-			if (res.ok) {
-				setSentStatus("Successfully Requested Quote!");
-			} else {
-				setSentStatus("Something Went Wrong!");
-			}
-		}).catch(error => {
-			setSentStatus("Something Went Wrong!");
-			console.log(error)
-		});
+
+		try {
+			const res =  await axios.post('/api/send')
+			console.log(res.data);
+		} catch (e) {
+			console.error(e);
+		}
+		
 
 	}
 	const handleConfirmSubmit = () => {
@@ -90,21 +87,6 @@ const Contact = () => {
 					</div>
 				</div>
 				<div className="sm:flex gap-4 max-sm:space-y-4">
-					<div className="w-full">
-						<label htmlFor="plan" className="mb-3 block text-sm font-medium text-dark dark:text-white">
-						Choose Your Plan
-						</label>
-						<select
-						name="plan"
-							required
-							id="plan"
-							className="border-stroke dark:text-body-color-dark dark:shadow-two h-[50px] rounded-sm border bg-[#f8f8f8] px-6 py-3 text-base text-body-color outline-none focus:border-primary dark:border-transparent dark:bg-[#2C303B] dark:focus:border-primary dark:focus:shadow-none w-full"
-						>
-							<option value="basic">Basic Plan</option>
-							<option value="pro">Standard Plan</option>
-							<option value="enterprise">Enterprise Plan</option>
-						</select>
-					</div>
 					<div className="w-full">
 						<label 
 						htmlFor="timeline"
@@ -174,7 +156,7 @@ const Contact = () => {
 		<Animate className="flex justify-center ">
 			<p className="mb-4 text-lg font-medium text-dark dark:text-white">
 				Or you can email us directly at
-				<a href="mailto:devolympus@hotmail.com" className="inline text-primary text-lg font-medium"> devolympus@hotmail.com</a>
+				<a href="mailto:polytechdev@hotmail.com" className="inline text-primary text-lg font-medium"> polytechdev@hotmail.com</a>
 			</p>
 		</Animate>
     </section>

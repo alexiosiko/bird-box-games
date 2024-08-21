@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
 import ScrollLink from "../ScrollToTop/ScrollLink";
+import Link from "next/link";
 
 const Header = () => {
 	// Navbar toggle
@@ -49,21 +50,15 @@ const Header = () => {
 		>
 			<div className="relative m-auto flex items-center justify-center">
 				<div className="w-full px-4 xl:mr-12 font-extrabold text-primary">
-					PolyTech Development
-					{/* <Image
-					src="/images/logo/dev-olympus-logo-black.png"
-					alt="logo"
-					width={130}
-					height={30}
-					className="dark:hidden"
-					/>
-					<Image
-					src="/images/logo/dev-olympus-logo.png"
-					alt="logo"
-					width={130}
-					height={30}
-					className="hidden dark:block"
-					/> */}
+					<ScrollLink to="home">
+						<Image
+						src="/images/logo/company-logo-black.svg"
+						alt="logo"
+						width={130}
+						height={30}
+						className="dark:hidden"
+						/>
+					</ScrollLink>
 				</div>
 				<div className="flex w-full items-center justify-between px-4">
 				<div>

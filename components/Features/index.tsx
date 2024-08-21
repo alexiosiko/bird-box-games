@@ -11,7 +11,7 @@ const Features = () => {
 			<Animate>
           <SectionTitle
             title="What We Do"
-            paragraph="Dev Olympus excels in creating dynamic websites and robust databases with streamlined solutions, ensuring efficient and comprehensive development that exceeds expectations."
+            paragraph="Poly Tech excels in creating dynamic websites and robust databases with streamlined solutions, ensuring efficient and comprehensive development that exceeds expectations."
             center
 			/>
 			</Animate>
