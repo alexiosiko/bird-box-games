@@ -8,28 +8,23 @@ import { Analytics } from "@vercel/analytics/react"
 const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({
-  children,
+	children,
 }: {
-  children: React.ReactNode;
+  	children: React.ReactNode;
 }) {
-  return (
-    <html suppressHydrationWarning lang="en">
-      {/*
-        <head /> will contain the components returned by the nearest parent
-        head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
-      */}
-      <head />
+	return (
+		<html suppressHydrationWarning lang="en">
 
-      <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
-        <Providers>
-          <Header />
-          {children}
-          <Footer />
-        </Providers>
-		<Analytics />
-      </body>
-    </html>
-  );
+			<body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
+				<Providers>
+					<Header />
+						{children}
+					<Footer />
+				</Providers>
+				<Analytics />
+			</body>
+		</html>
+	);
 }
 
 import { Providers } from "./providers";
