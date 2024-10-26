@@ -7,12 +7,12 @@ import Link from "next/link";
 
 export const Hero = () => {
   return (
-    <div  className="h-screen flex flex-col justify-around">
+    <div  className="md:h-screen flex flex-col justify-around">
       <div className="lg:flex"  >
         <div className="flex flex-col items-center w-full lg:w-1/2">
           <div className="max-w-2xl mt-24 max-lg:text-center items-center max-lg:flex flex-col">
-            <TypewriterText text="We Develop your Dreams." className="text-5xl  font-bold leading-snug tracking-tight text-gray-800 dark:text-white" />
-            <Animatee delay={1.75 } className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
+            <TypewriterText text="We Develop your Dreams." className="lg:text-5xl max-lg:text-2xl  font-bold leading-snug tracking-tight text-gray-800 dark:text-white" />
+            <Animatee delay={1.75 } className="py-5  leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
               Nextly is a free landing page & marketing website
               template for startups and indie projects. Its built with
               Next.js & TailwindCSS. And its completely open-source.
@@ -20,9 +20,11 @@ export const Hero = () => {
 
             <div className="flex flex-col items-start space-y-3 sm:space-x-4 sm:space-y-0 sm:items-center sm:flex-row">
 				<Animatee delay={2}>
-					<Button
+					<Button 
 						className="px-8 py-4 text-lg ">
-						Get Started
+							<Link href="#contact">
+								Get Started
+							</Link>
 					</Button>
 				</Animatee>
 				<Animatee delay={2} className="w-full">
@@ -40,7 +42,7 @@ export const Hero = () => {
         </Animatee>
       </div>
       <div>
-		<div className="flex flex-col justify-center">
+		<div className="flex flex-col justify-center ">
 			<div className="flex flex-wrap justify-center w-full gap-5 mt-10 relative 0 md:justify-around items-center">
 				{frameworks.map((framework, index: number) => (
 					<Animatee initial={{ y: -50, opacity: 0}} key={index} delay={(index / 10) + 3.2}>

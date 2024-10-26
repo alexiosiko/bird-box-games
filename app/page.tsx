@@ -12,6 +12,7 @@ export default function Home() {
   return (
     <div id="home" className="max-w-7xl mx-auto max-lg:pl-4 max-lg:pr-4">
       <Hero />
+	  <div className="h-24 lg:hidden"/>
 
       <SectionTitle
 	  id="about"

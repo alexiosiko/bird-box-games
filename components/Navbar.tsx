@@ -7,7 +7,7 @@ export const Navbar = () => {
 
   return (
     <div className="w-full">
-      <nav className="container relative flex flex-wrap items-center justify-between p-8 mx-auto lg:justify-between xl:px-1">
+      <nav className="max-lg:justify-center max-w-7xl  relative flex flex-wrap items-center lg:justify-between p-8 mx-auto lg:justify-between xl:px-1">
         {/* Logo  */}
           <span className="flex items-center space-x-2 text-2xl font-medium text-indigo-500 dark:text-gray-100">
               <span>
@@ -23,7 +23,7 @@ export const Navbar = () => {
        
         
         {/* menu  */}
-        <div className="hidden text-center lg:flex lg:items-center">
+        <div className="max-lg:hidden text-center lg:flex lg:items-center">
           <ul className="items-center justify-end flex-1 pt-6 list-none lg:pt-0 lg:flex">
             {navigation.map((menu, index) => (
               <li className="mr-3 nav__item" key={index}>
@@ -47,5 +47,5 @@ const navigation = [
 	{   name: "About Us", id: "about"},
 	{   name: "Portfolio", id: "portfolio"},
 	{   name: "FAQ", id: "faq"},
-	{   name: "Contact", id: "Contact"},
+	{   name: "Contact", id: "contact"},
 ];

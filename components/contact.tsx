@@ -41,13 +41,12 @@ const Contact = () => {
 
 
   return (
-    <Animatee id="Contact" className="relative z-10 py-16 md:py-20 lg:py-28">
+    <Animatee id="contact" className="relative mx-auto max-w-2xl z-10 py-16 md:py-20 lg:py-28">
 
-		<div className="w-full px-4 m-auto max-w-2xl">
 		<div
-			className="  shadow-three dark:bg-gray-dark mb-12 rounded-sm bg-white px-8 py-11 sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
+			className=" flex flex-col align-middle shadow-three dark:bg-gray-dark mb-12 rounded-sm bg-white  py-11 sm:p-[55px] lg:mb-5 lg:px-8 xl:p-[55px]"
 			data-wow-delay=".15s">
-			<h2 className="mb-3 text-6xl font-bold text-black dark:text-white sm:text-3xl lg:text-2xl xl:text-3xl">
+			<h2 className="mb-3 md:text-6xl max-md:text-3xl font-bold text-black dark:text-white sm:text-3xl lg:text-2xl xl:text-3xl">
 			Let&apos;s get Started and Request a Quote!
 			</h2>
 			<p className="mb-12 text-base font-medium text-body-color">
@@ -130,7 +129,6 @@ const Contact = () => {
 				</button>
 			</form>
 		</div>
-		</div>
 		{/* Confirmation Modal */}
 		{/* {isConfirmationOpen && (
 			<div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
@@ -154,7 +152,7 @@ const Contact = () => {
 			</div>
 		)} */}
 		<div className="flex justify-center ">
-			<p className="mb-4 text-lg font-medium text-dark dark:text-white">
+			<p className="mb-4 text-lg text-center font-medium text-dark dark:text-white">
 				Or you can email us directly at
 				<a href="mailto:polytechdev@hotmail.com" className="inline text-primary text-lg font-medium"> polytechdev@hotmail.com</a>
 			</p>

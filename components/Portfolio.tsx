@@ -34,34 +34,35 @@ export const Portfolio = () => {
 };
 const projects = [
 	{
-	  title: "Unity Puzzle Game",
-	  description:
-		"Created all the sprites and animations to bring a classic puzzle game from childhood to life for the client.",
-	  image: "/portfolio/bilge.png",
-	},
-	{
-	  title: "Fitness Tracking App",
-	  description:
+		title: "Fitness Tracking App",
+		description:
 		"Built a smart app that uses AI for calorie tracking, with full user authentication and a custom database to keep it all running smoothly.",
-	  image: "/portfolio/calories.png", // Example image path
+		image: "/portfolio/calories.png", // Example image path
 	},
 	{
-	  title: "Musical Training Game",
-	  description:
-		"Made a fun piano game where players match the notes played back to them. It's a cool way to improve musical skills.",
-	  image: "/portfolio/musicalnotestraining-app.png", // Example image path
-	},
-	{
-	  title: "File Sharing System",
-	  description:
-		"Delivered a simple and secure file-sharing system for a client to safely send files within the company.",
-	  image: "/portfolio/sharex.png", // Example image path
-	},
-	{
-	  title: "Inventory Manager",
-	  description:
+		title: "Inventory Manager",
+		description:
 		"Built a custom inventory management tool so the client can keep track of all the stock in her business.",
-	  image: "/portfolio/inventory.png", // Example image path
+		image: "/portfolio/inventory.png", // Example image path
+	  },
+	{
+		title: "Musical Training Game",
+		description:
+		"Made a fun piano game where players match the notes played back to them. It's a cool way to improve musical skills.",
+		image: "/portfolio/musicalnotestraining-app.png", // Example image path
+	},
+	{
+		title: "File Sharing System",
+		description:
+		"Delivered a simple and secure file-sharing system for a client to safely send files within the company.",
+		image: "/portfolio/sharex.png", // Example image path
+	},
+	
+	{
+		title: "Unity Puzzle Game",
+		description:
+		"Created all the sprites and animations to bring a classic puzzle game from childhood to life for the client.",
+		image: "/portfolio/bilge.png",
 	},
 	{
 	  title: "Photo Editor",
