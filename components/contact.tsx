@@ -125,7 +125,7 @@ const Contact = () => {
 				${sentStatus == "Working..." && "bg-orange-400"}
 				${sentStatus == "Uh oh, something went wrong on our end :( Please email us instead polytechdev@hotmail.com" && "bg-red-400"}
 				${sentStatus == "Successfull sent quote! We will get back to you shortly" && "bg-green-400"} 
-				shadow-submit dark:shadow-submit-dark rounded-sm  px-9 py-4 text-base font-medium text-black duration-300 w-full`} >
+				shadow-submit dark:shadow-submit-dark rounded-sm  px-9 py-4 text-base font-medium  duration-300 w-full`} >
 					{sentStatus}
 				</button>
 			</form>
