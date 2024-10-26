@@ -10,7 +10,7 @@ export const Hero = () => {
     <div  className="h-screen flex flex-col justify-around">
       <div className="lg:flex"  >
         <div className="flex flex-col items-center w-full lg:w-1/2">
-          <div className="max-w-2xl mb-8 max-lg:text-center items-center max-lg:flex flex-col">
+          <div className="max-w-2xl mt-24 max-lg:text-center items-center max-lg:flex flex-col">
             <TypewriterText text="We Develop your Dreams." className="text-5xl  font-bold leading-snug tracking-tight text-gray-800 dark:text-white" />
             <Animatee delay={1.75 } className="py-5 text-xl leading-normal text-gray-500 lg:text-xl xl:text-2xl dark:text-gray-300">
               Nextly is a free landing page & marketing website
@@ -36,16 +36,12 @@ export const Hero = () => {
           </div>
         </div>
         <Animatee delay={2.5} className="flex items-center justify-center w-full lg:w-1/2">
-			<iframe width={500} height={500} src="https://lottie.host/embed/4f4d7922-7497-4b3f-99c8-7c8f90aa873d/Nb9CKQA4N8.json"></iframe>
+			<iframe width={500} height={500} className="lg:relative bottom-8" src="https://lottie.host/embed/4f4d7922-7497-4b3f-99c8-7c8f90aa873d/Nb9CKQA4N8.json"></iframe>
         </Animatee>
       </div>
-      <Animatee>
+      <div>
 		<div className="flex flex-col justify-center">
-			<Animatee delay={4.5} className="text-center">
-				Trusted by <span className="text-primary">2000+</span>{" "}
-				customers worldwide
-			</Animatee>
-			<div className="flex flex-wrap justify-center w-full gap-5 mt-10 relative 0 md:justify-around">
+			<div className="flex flex-wrap justify-center w-full gap-5 mt-10 relative 0 md:justify-around items-center">
 				{frameworks.map((framework, index: number) => (
 					<Animatee key={index} delay={(index / 10) + 3.2}>
 						<Image width={124} height={20} className="object-contain" key={index} src={framework.src} alt={`Framework ${index}`} />
@@ -53,7 +49,7 @@ export const Hero = () => {
 				))}
 			</div>
 		</div>
-      </Animatee>
+      </div>
     </div>
   );
 }
