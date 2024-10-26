@@ -1,5 +1,5 @@
 import React from "react";
-import Animate from "./animations/animate";
+import Animate from "./animations/Animate";
 
 interface SectionTitleProps {
   preTitle?: string;

@@ -1,5 +1,5 @@
 import { Container } from "@/components/Container";
-import Animate from "./animations/animate";
+import Animate from "./animations/Animate";
 import Image from "next/image";
 
 export const Portfolio = () => {

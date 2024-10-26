@@ -1,7 +1,7 @@
 // components/TypewriterText.js
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import Animate from "./animate";
+import Animate from "./Animate";
 
 const TypewriterText = ({ text, className }: {
 	text: string,

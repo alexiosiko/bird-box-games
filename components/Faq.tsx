@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { Container } from "@/components/Container";
-import Animate from "./animations/animate";
+import Animate from "./animations/Animate";
 
 export const Faq = () => {
   return (

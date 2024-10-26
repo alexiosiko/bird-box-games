@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import axios from "axios";
-import Animate from "./animations/animate";
+import Animate from "./animations/Animate";
 
 export type emailType = {
 	name: string,

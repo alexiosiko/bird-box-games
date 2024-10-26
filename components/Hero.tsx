@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { frameworks } from "./data";
 import { Button } from "./ui/button";
-import Animate from "./animations/animate";
+import Animate from "./animations/Animate";
 import TypewriterText from "./animations/typewriter";
 import Link from "next/link";
 
