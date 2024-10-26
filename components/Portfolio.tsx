@@ -1,5 +1,6 @@
 import { Container } from "@/components/Container";
 import Animate from "./animations/animate";
+import Image from "next/image";
 
 export const Portfolio = () => {
 
@@ -20,7 +21,7 @@ export const Portfolio = () => {
       <div className="grid gap-10 mt-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, index) => (
           <Animate delay={index / 10 + 0.5} key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
-            <img src={project.image} alt={project.title} className="lg:w-full mx-auto h-64 object-cover" />
+            <Image src={project.image} alt={project.title} className="lg:w-full mx-auto h-64 object-cover" />
             <div className="p-6">
               <h3 className="text-xl font-bold text-gray-800">{project.title}</h3>
               <p className="mt-3 text-gray-600">{project.description}</p>

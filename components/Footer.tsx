@@ -1,11 +1,6 @@
-import Link from "next/link";
-import Image from "next/image";
 import React from "react";
-import { Container } from "@/components/Container";
 
 export function Footer() {
-  const navigation = ["Product", "Features", "Pricing", "Company", "Blog"];
-  const legal = ["Terms", "Privacy", "Legal"];
   return (
     <div className="relative h-96 flex flex-col justify-end text-center bottom-4">
 		Copyright © {new Date().getFullYear()} PolyTech Development. Vancouver, BC
