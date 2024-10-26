@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import axios from "axios";
-import Animate from "./animations/Animate";
+import Animatee from "./animations/animatee";
 
 export type emailType = {
 	name: string,
@@ -41,7 +41,7 @@ const Contact = () => {
 
 
   return (
-    <Animate id="Contact" className="relative z-10 py-16 md:py-20 lg:py-28">
+    <Animatee id="Contact" className="relative z-10 py-16 md:py-20 lg:py-28">
 
 		<div className="w-full px-4 m-auto max-w-2xl">
 		<div
@@ -159,7 +159,7 @@ const Contact = () => {
 				<a href="mailto:polytechdev@hotmail.com" className="inline text-primary text-lg font-medium"> polytechdev@hotmail.com</a>
 			</p>
 		</div>
-    </Animate>
+    </Animatee>
   );
 };
 

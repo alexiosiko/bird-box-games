@@ -1,7 +1,7 @@
 // components/TypewriterText.js
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
-import Animate from "./Animate";
+import Animatee from "./animatee";
 
 const TypewriterText = ({ text, className }: {
 	text: string,
@@ -24,12 +24,12 @@ const TypewriterText = ({ text, className }: {
   }, [text]);
 
   return (
-    <Animate className={className}>
+    <animatee className={className}>
       {/* Non-animated part */}
       <span>{text.slice(0, -15)}</span>
       {/* Typing animation */}
         {displayedText}
-    </Animate>
+    </animatee>
   );
 };
 

@@ -1,12 +1,12 @@
 import { Container } from "@/components/Container";
-import Animate from "./animations/Animate";
+import Animatee from "./animations/animatee";
 import Image from "next/image";
 
 export const Portfolio = () => {
 
   return (
     <div id="portfolio">
-		<Animate>
+		<Animatee>
 			<div className="text-sm font-bold tracking-wider text-primary uppercase text-center">
 				Portfolio
 			</div>
@@ -16,17 +16,17 @@ export const Portfolio = () => {
 			<p className="py-5 text-lg leading-normal text-gray-500 lg:text-xl xl:text-xl dark:text-gray-300 text-center">
 				Take a look at some of the projects we’ve successfully delivered for our clients.
 			</p>
-		</Animate>
+		</Animatee>
       
       <div className="grid gap-10 mt-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {projects.map((project, index) => (
-          <Animate delay={index / 10 + 0.5} key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
+          <Animatee delay={index / 10 + 0.5} key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
             <Image src={project.image} alt={project.title} className="lg:w-full mx-auto h-64 object-cover" />
             <div className="p-6">
               <h3 className="text-xl font-bold text-gray-800">{project.title}</h3>
               <p className="mt-3 text-gray-600">{project.description}</p>
             </div>
-          </Animate>
+          </Animatee>
         ))}
       </div>
     </div>

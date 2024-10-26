@@ -3,7 +3,7 @@
 import { useAnimate, motion } from "framer-motion"
 import React from "react";
 
-export default function Animate({ children, initial = { y: 100, opacity: 0 }, delay = 0.3, className, id }: { 
+export default function Animatee({ children, initial = { y: 100, opacity: 0 }, delay = 0.3, className, id }: { 
 	children: React.ReactNode,
 	initial?: {},
 	delay?: number,
