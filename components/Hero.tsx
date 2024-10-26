@@ -43,7 +43,7 @@ export const Hero = () => {
 		<div className="flex flex-col justify-center">
 			<div className="flex flex-wrap justify-center w-full gap-5 mt-10 relative 0 md:justify-around items-center">
 				{frameworks.map((framework, index: number) => (
-					<Animatee key={index} delay={(index / 10) + 3.2}>
+					<Animatee initial={{ y: -50, opacity: 0}} key={index} delay={(index / 10) + 3.2}>
 						<Image width={124} height={20} className="object-contain" key={index} src={framework.src} alt={`Framework ${index}`} />
 					</Animatee>
 				))}
