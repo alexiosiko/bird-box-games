@@ -1,16 +1,15 @@
 "use client";
 import React from "react";
-import { Container } from "@/components/Container";
 import Animatee from "./animations/animatee";
 
 export const Faq = () => {
   return (
       <div id="faq" className="w-full max-w-2xl mx-auto rounded-2xl">
         {faqdata.map((item, index) => (
-          <animatee key={index} className="mb-10">
+          <Animatee key={index} className="mb-10">
 			<h1 className="font-bold mb-2">{item.question}</h1>
 			<h1>{item.answer}</h1>
-          </animatee>
+          </Animatee>
         ))}
       </div>
   );

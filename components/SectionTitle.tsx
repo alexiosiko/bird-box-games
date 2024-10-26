@@ -11,7 +11,7 @@ interface SectionTitleProps {
 
 export const SectionTitle = (props: Readonly<SectionTitleProps>) => {
   return (
-    <animatee
+    <Animatee
 
 	id={props.id}
       className={`lg:flex w-full flex-col mt-4 ${
@@ -34,7 +34,7 @@ export const SectionTitle = (props: Readonly<SectionTitleProps>) => {
           {props.children}
         </p>
       )}
-    </animatee>
+    </Animatee>
   );
 }
 

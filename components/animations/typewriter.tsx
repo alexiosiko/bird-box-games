@@ -24,12 +24,12 @@ const TypewriterText = ({ text, className }: {
   }, [text]);
 
   return (
-    <animatee className={className}>
+    <Animatee className={className}>
       {/* Non-animated part */}
       <span>{text.slice(0, -15)}</span>
       {/* Typing animation */}
         {displayedText}
-    </animatee>
+    </Animatee>
   );
 };
 
