@@ -26,9 +26,17 @@ const games = [
 export default function Games() {
   return (
     <section id="games" className="md:py-32 px-6">
-      <h2 className="text-6xl font-bold text-center text-[hsl(var(--primary-foreground))] mb-16">
-        Our Games
-      </h2>
+     <motion.div
+  initial={{ opacity: 0, y: -50 }}
+  animate={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+
+  transition={{ duration: 0.8 }}
+>
+  <h2 className="text-6xl font-bold text-center text-[hsl(var(--primary-foreground))] mb-16">
+    Our Games
+  </h2>
+</motion.div>
 
       <div className="max-w-6xl mx-auto max-md:flex flex-col md:grid grid-cols-6 gap-6 auto-rows-[6rem]">
         {games.map((game, index) => (

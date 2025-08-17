@@ -16,6 +16,8 @@ export default function Nav() {
       className="w-full gap-8 flex justify-center items-center py-6 px-12 bg-[hsl(var(--background))] fixed top-0 z-50"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
+        viewport={{ once: true }}
+
       transition={{ delay: 2, duration: 1 }}
     >
       {sections.map((section) => (

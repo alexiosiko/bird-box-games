@@ -52,7 +52,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body>
-        <div>{children}</div>
+        <div className="overflow-hidden">{children}</div>
         <Analytics />
       </body>
     </html>

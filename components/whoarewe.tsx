@@ -8,8 +8,9 @@ export default function WhoWeAre() {
       id="who-we-are"
       className="py-32 px-6 md:px-20 bg-[hsl(var(--background))] flex flex-col md:flex-row items-center gap-12"
       initial={{ opacity: 0, y: 50 }}
+        viewport={{ once: true }}
+
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
       transition={{ duration: 0.8, ease: 'easeOut' }}
     >
       {/* Text Column */}

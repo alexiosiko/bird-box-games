@@ -21,6 +21,8 @@ export default function Hero() {
         <motion.div
 		className='mx-auto h-full bottom-[10%] relative'
           initial={{ opacity: 0, y: 20 }}
+        viewport={{ once: true }}
+
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 2.5, duration: 0.8, ease: 'easeOut' }}
         >

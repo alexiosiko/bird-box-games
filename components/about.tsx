@@ -17,6 +17,8 @@ export default function About() {
         className="text-4xl md:text-6xl font-bold text-[hsl(var(--foreground))] mb-10 tracking-tight"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+
         transition={{ duration: 0.8, ease: 'easeOut' }}
       >
        Our Studio, Your Playground
@@ -37,6 +39,8 @@ export default function About() {
         className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+
         transition={{ delay: 0.4, duration: 0.8 }}
       >
         {/* Left card */}

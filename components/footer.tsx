@@ -86,7 +86,7 @@ export default function Footer() {
 
       {/* Bottom */}
       <div className="mt-12  border-t-2 border-[hsl(var(--border))] pt-6 text-center text-sm">
-        © {new Date().getFullYear()} Bird Box Studios. All Rights Reserved.
+        © {new Date().getFullYear()} Poly Tech Development. ( Operating as Bird Box Games )
       </div>
     </footer>
   );
