@@ -2,7 +2,7 @@ import React from "react";
 import { motion } from "framer-motion";
 
 const sections = [
-  { id: "", label: "Home" },
+  { id: "#", label: "Home" },
   { id: "#about", label: "About" },
   { id: "#games", label: "Games" },
   { id: "#footer", label: "Contact" },

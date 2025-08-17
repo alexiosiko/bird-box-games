@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.birdboxgames.com
+
+# Sitemaps
+Sitemap: https://www.birdboxgames.com/sitemap.xml

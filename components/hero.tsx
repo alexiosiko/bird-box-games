@@ -15,16 +15,15 @@ export default function Hero() {
         />
 
       {/* Bottom 1/3: Animated Text + Button */}
-        
-
-
         <motion.div
 		className='mx-auto h-full bottom-[10%] relative'
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 2.5, duration: 0.8, ease: 'easeOut' }}
         >
-          <Button className="text-lg md:text-xl px-10 ">See Our Games</Button>
+          <Button 
+		 	  onClick={() => document.getElementById('games')?.scrollIntoView({ behavior: 'smooth' })}
+			  className="text-lg md:text-xl px-10 ">See Our Games</Button>
         </motion.div>
 
       <style jsx>{`

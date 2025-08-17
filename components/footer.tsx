@@ -1,6 +1,7 @@
 import React from 'react';
 import { Mail, MapPin } from "lucide-react";
 import { FaInstagram, FaSteam, FaTwitter, FaYoutube } from "react-icons/fa";
+import EmailReveal from './getemail';
 
 const socials = [
   {
@@ -79,12 +80,7 @@ export default function Footer() {
             Passionate about making games? <br />
             We’d love to hear from you.
           </p>
-          <a
-            href="mailto:birdboxgames@hotmail.com?subject=Team Application"
-            className="inline-block px-6 py-3 bg-[hsl(var(--primary))] text-[hsl(var(--primary-foreground))] rounded-xl text-base font-semibold hover:bg-[hsl(var(--secondary))] transition"
-          >
-            Apply Now
-          </a>
+          {EmailReveal()}
         </div>
       </div>
 
