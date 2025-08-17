@@ -25,12 +25,12 @@ const games = [
 
 export default function Games() {
   return (
-    <section id="games" className="py-32 px-6">
+    <section id="games" className="md:py-32 px-6">
       <h2 className="text-6xl font-bold text-center text-[hsl(var(--primary-foreground))] mb-16">
         Our Games
       </h2>
 
-      <div className="max-w-6xl mx-auto grid grid-cols-6 gap-6 auto-rows-[6rem]">
+      <div className="max-w-6xl mx-auto max-md:flex flex-col md:grid grid-cols-6 gap-6 auto-rows-[6rem]">
         {games.map((game, index) => (
           <motion.a
             key={index}
