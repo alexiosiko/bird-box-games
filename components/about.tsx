@@ -29,6 +29,8 @@ export default function About() {
         className="text-2xl md:text-3xl text-[hsl(var(--muted-foreground))] max-w-3xl mx-auto mb-10 leading-relaxed"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+
         transition={{ delay: 0.2, duration: 0.8, ease: 'easeOut' }}
       >
         Designing playful, stylish, and cozy experiences for players around the world.
