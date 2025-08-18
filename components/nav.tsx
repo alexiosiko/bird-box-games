@@ -18,7 +18,7 @@ export default function Nav() {
       animate={{ opacity: 1 }}
         viewport={{ once: true }}
 
-      transition={{ delay: 2, duration: 1 }}
+      transition={{ delay: 0.8, duration: 1 }}
     >
       {sections.map((section) => (
         <a
