@@ -25,14 +25,14 @@ export default function Hero() {
   return (
     	<section className="h-screen relative flex-col justify-center flex">
 		{/* Logo/Video */}
-	 	 <div className=' relative min-h-[460px] h-min max-w-2xl mx-auto' >
+	 	 <div className=' relative  min-h-[460px] h-min max-w-2xl mx-auto' >
 
 			{fallback ? 
 					<motion.img
 					src="/logo/image.png"
 					alt="bird-box-studios.png"
 					className=" w-full object-contain"
-					height={500}
+					height={400}
 					width={400}
 					initial={{ opacity: 0, scale: 0.8 }}
 					animate={{ opacity: 1, scale: 1 }}
@@ -40,12 +40,12 @@ export default function Hero() {
 					/> :
 					<video
 					ref={videoRef}
-					height={500}
+					height={400}
 					width={400}
 					muted
 					autoPlay
 					playsInline
-					className=" w-full object-contain"
+					className=" w-full border-8 object-contain"
 					>
 					<source src="/logo/anim_1024_compressed.mp4" type="video/mp4" />
 					<source src="/logo/anim_1024_compressed.webm" type="video/webm" />
