@@ -42,7 +42,7 @@ export default function Games() {
   {games.map((game, index) => (
     <motion.a
       key={index}
-      href={game.link || "#"}
+      href={game.link}
       target="_blank"
       rel="noopener noreferrer"
       className="relative rounded-3xl w-full max-md:aspect-square overflow-hidden shadow-lg bg-[hsl(var(--card))] transition-all duration-300 hover:scale-105 hover:shadow-2xl"
