@@ -7,10 +7,11 @@ export default function Hero() {
     <section className="h-screen flex-col justify-center flex">
       {/* Logo/Video */}
         <video
-		autoPlay
 		muted
+		
+		autoPlay
 		playsInline
-		className="max-h-full object-contain flex justify-center items-center h-2/3 mt-24 w-full"
+		className="max-h-full object-contain flex justify-center items-center h-2/3 max-md:mt-48 md:mt-24 w-full"
 		>
 			<source src="/logo/anim.mp4" type="video/mp4" />
 			<source src="/logo/anim.webm" type="video/webm" />

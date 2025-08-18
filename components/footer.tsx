@@ -1,6 +1,6 @@
 import React from 'react';
 import { Mail, MapPin } from "lucide-react";
-import { FaInstagram, FaSteam, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaInstagram, FaSteam, FaTwitter } from "react-icons/fa";
 import EmailReveal from './getemail';
 
 const socials = [
@@ -39,7 +39,7 @@ export default function Footer() {
         {/* Left - Studio Info */}
         <div>
           <h3 className="text-3xl font-bold text-[hsl(var(--primary-foreground))] mb-4">
-            Bird Box Studios
+            Bird Box Games
           </h3>
           <p className="text-base leading-relaxed">
             Crafting cozy & creative games 🎮 <br />

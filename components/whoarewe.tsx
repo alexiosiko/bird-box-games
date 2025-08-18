@@ -6,7 +6,7 @@ export default function WhoWeAre() {
   return (
     <motion.section
       id="who-we-are"
-      className="py-32 px-6 md:px-20 bg-[hsl(var(--background))] flex flex-col md:flex-row items-center gap-12"
+      className="py-16 md:py-32 px-6 md:px-20 bg-[hsl(var(--background))] flex flex-col md:flex-row items-center gap-12"
       initial={{ opacity: 0, y: 50 }}
         viewport={{ once: true }}
 
@@ -25,15 +25,16 @@ export default function WhoWeAre() {
           Who We Are
         </h2>
         <p className="text-xl md:text-2xl text-[hsl(var(--muted-foreground))] leading-relaxed">
-          We were a bunch of lost students wandering through Athens, bored of our
-          fields of study and dreaming of something more playful. Over late-night
-          coffee and endless sketches, we found each other—and a shared passion for
-          creating games that bring joy and cozy adventures to players everywhere.
-        </p>
-        <p className="text-xl md:text-2xl text-[hsl(var(--muted-foreground))] leading-relaxed mt-4">
-          Today, we’re a small, close-knit indie studio, turning our little ideas
-          into worlds you can explore and fall in love with.
-        </p>
+			We were just two lost uni students in Athens, bored of our degrees and dreaming
+			about making games together. What started as random doodles and silly ideas
+			slowly grew into something real (with way too much coffee involved).
+		</p>
+		<p className="text-xl md:text-2xl text-[hsl(var(--muted-foreground))] leading-relaxed mt-4">
+			Now we’re bringing that dream to life—with trial and error, plenty of roadblocks,
+			and a fair bit of backtracking, of course. Sometimes it’s meaningful, sometimes
+			it’s just chaos, but always made with love (and a bit of bullshit).
+		</p>
+
       </motion.div>
 
       {/* Image Column */}
