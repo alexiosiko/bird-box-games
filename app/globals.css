@@ -6,7 +6,7 @@
 @layer base {
   :root {
     /* Softer pastels */
-    --background: 43, 93%, 95%;
+    --background: 44, 93%, 95%;
     --foreground: 222, 47%, 11%;
     
     --muted: 210, 40%, 96%;
