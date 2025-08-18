@@ -25,7 +25,7 @@ export default function Hero() {
   return (
     	<section className="h-screen relative flex-col justify-center flex">
 		{/* Logo/Video */}
-	 	 <div className=' relative min-h-[460px] h-min max-w-2xl border-1 border-background mx-auto' >
+	 	 <div className=' relative min-h-[460px] h-min max-w-2xl mx-auto' >
 
 			{fallback ? 
 					<motion.img

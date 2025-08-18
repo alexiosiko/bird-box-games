@@ -86,4 +86,13 @@ video {
   border: none;
   outline: none;
   -webkit-appearance: none;
+  box-shadow: 0 0 0 2px var(--background); /* “shadow hack” to cover edges */
+  -webkit-box-shadow: 0 0 0 2px var(--background);
+  
+  /* fallback background */
+  background-color: var(--background);
+
+  /* optional bottom border to mimic RN fix */
+  border-bottom-width: 1px;
+  border-bottom-color: transparent;
 }
