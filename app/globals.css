@@ -79,3 +79,11 @@
 html {
   scroll-behavior: smooth;
 }
+
+
+/* Tr to cover outline in ios build */
+video {
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+}
