@@ -45,7 +45,7 @@ export default function Hero() {
 					muted
 					autoPlay
 					playsInline
-					className=" w-full border-8 object-contain"
+					className=" w-full object-contain"
 					>
 					<source src="/logo/anim_1024_compressed.mp4" type="video/mp4" />
 					<source src="/logo/anim_1024_compressed.webm" type="video/webm" />
