@@ -45,7 +45,7 @@ export default function Games() {
       href={game.link}
       target="_blank"
       rel="noopener noreferrer"
-      className="relative rounded-3xl w-full max-md:aspect-square overflow-hidden shadow-lg bg-[hsl(var(--card))] transition-all duration-300 hover:scale-105 hover:shadow-2xl"
+      className="relative rounded-3xl w-full max-md:aspect-video  overflow-hidden shadow-lg bg-[hsl(var(--card))] transition-all duration-300 hover:scale-105 hover:shadow-2xl"
       style={{
         gridColumn: `span ${game.layout.col} / span ${game.layout.col}`,
         gridRow: `span ${game.layout.row} / span ${game.layout.row}`,
