@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 const games = [
   {
     title: "Pixel Dungeons",
-    image: "/games/pixel-dungeons-screenshot.png",
+    image: "/games/pixel-dungeons.jpg",
     description: "A turn-based puzzle game.",
     link: "https://store.steampowered.com/app/3896240/Pixel_Dungeons/",
     layout: { col: 4, row:4 },
@@ -61,8 +61,8 @@ export default function Games() {
         className="w-full h-full object-cover"
       />
       <div className="absolute inset-0 bg-[rgba(0,0,0,0.58)] opacity-0 hover:opacity-100 flex flex-col items-center justify-center gap-4 text-white transition-opacity duration-300">
-        <h1 className="text-4xl font-bold">{game.title}</h1>
-        <p className="text-xl">{game.description}</p>
+        {/* <h1 className="text-4xl text-white font-bold">{game.title}</h1> */}
+        <p className="bold text-xl">{game.description}</p>
       </div>
     </motion.a>
   ))}
