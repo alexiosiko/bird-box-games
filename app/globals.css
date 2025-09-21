@@ -36,12 +36,11 @@
   }
 
   body {
+	letter-spacing: 0.25rem;
     @apply bg-[hsl(var(--background))] text-[hsl(var(--foreground))] font-sans;
-    font-family: var(--font-body);
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: var(--font-title);
     color: hsl(var(--primary-foreground));
   }
 
@@ -53,27 +52,10 @@
     color: hsl(var(--secondary-foreground));
   }
 
-  .card {
-    @apply rounded-xl shadow-lg p-6 bg-[hsl(var(--card))] text-[hsl(var(--card-foreground))];
-  }
+
 }
 
-/* ---------------------- Fonts ---------------------- */
-@font-face {
-  font-family: "Pacifico";
-  src: url("/fonts/Pacifico.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
 
-@font-face {
-  font-family: "SourGummy";
-  src: url("/fonts/SourGummy.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
 
 /* Global smooth scroll */
 html {

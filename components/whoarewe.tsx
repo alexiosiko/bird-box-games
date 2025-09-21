@@ -4,22 +4,18 @@ import { motion } from 'framer-motion';
 
 export default function WhoWeAre() {
   return (
-    <motion.section
+    <section
       id="who-we-are"
       className="py-16 md:py-32 px-6 md:px-20 bg-[hsl(var(--background))] flex flex-col md:flex-row items-center gap-12"
-      initial={{ opacity: 0, y: 50 }}
-        viewport={{ once: true }}
 
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.8, ease: 'easeOut' }}
     >
       {/* Text Column */}
       <motion.div
         className="md:w-1/2 text-center md:text-left"
-        initial={{ opacity: 0, x: -50 }}
+        initial={{ opacity: 0, x: -80 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.8, ease: 'easeOut' }}
+        transition={{ duration: 0.7, type: 'spring', bounce: 0.5 }}
       >
         <h2 className="text-5xl md:text-6xl font-bold text-[hsl(var(--primary-foreground))] mb-6">
           Who We Are
@@ -40,10 +36,10 @@ export default function WhoWeAre() {
       {/* Image Column */}
       <motion.div
         className="md:w-1/2 flex justify-center md:justify-end"
-        initial={{ opacity: 0, x: 50 }}
+        initial={{ opacity: 0, x: 80 }}
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
+        transition={{ duration: 0.7, type: 'spring', bounce: 0.5, delay: 0.2 }}
       >
         <Image
           src="/images/2friends.jpg" // replace with your AI-generated image
@@ -53,6 +49,6 @@ export default function WhoWeAre() {
           className="rounded-3xl shadow-2xl object-cover"
         />
       </motion.div>
-    </motion.section>
+    </section>
   );
 }

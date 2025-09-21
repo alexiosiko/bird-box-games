@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
+import {  Delius_Swash_Caps } from "next/font/google";
+
+const font = Delius_Swash_Caps({
+  subsets: ["latin"],
+  weight: ["400"],
+  variable: "--font-delius",
+});
 
 export const metadata: Metadata = {
   title: "Bird Box Games",
@@ -51,7 +58,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           }}
         />
       </head>
-      <body>
+      <body className={font.className}>
         <div className="overflow-hidden">{children}</div>
         <Analytics />
       </body>

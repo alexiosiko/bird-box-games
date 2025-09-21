@@ -27,17 +27,17 @@ export default function Hero() {
 		{/* Logo/Video */}
 	 	 <div className=' relative  min-h-[460px] h-min max-w-2xl mx-auto' >
 
-			{fallback ? 
-					<motion.img
-					src="/logo/image.png"
-					alt="bird-box-studios.png"
-					className=" w-full object-contain"
-					height={400}
-					width={400}
-					initial={{ opacity: 0, scale: 0.8 }}
-					animate={{ opacity: 1, scale: 1 }}
-					transition={{ duration: 0.8, ease: 'easeOut' }}
-					/> :
+	    {fallback ? 
+		    <motion.img
+		    src="/logo/image.png"
+		    alt="bird-box-studios.png"
+		    className=" w-full object-contain"
+		    height={400}
+		    width={400}
+		    initial={{ opacity: 0, x: -80 }}
+		    animate={{ opacity: 1, x: 0 }}
+		    transition={{ duration: 0.7, type: 'spring', bounce: 0.5 }}
+		    /> :
 					<video
 					ref={videoRef}
 					height={400}
@@ -53,9 +53,9 @@ export default function Hero() {
 				}
 
 			<motion.div className='flex justify-center relative -top-[20%]'
-			initial={{ opacity: 0, y: 20 }}
-			animate={{ opacity: 1, y: 0 }}
-			transition={{ delay: 1.5}}
+			initial={{ opacity: 0, x: 80 }}
+			animate={{ opacity: 1, x: 0 }}
+			transition={{ delay: 1.5, duration: 0.7, type: 'spring', bounce: 0.5 }}
 			>
 
 				<Button 
