@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Analytics } from "@vercel/analytics/react";
-import {  Delius_Swash_Caps } from "next/font/google";
+import {  Boogaloo } from "next/font/google";
 
-const font = Delius_Swash_Caps({
+const font = Boogaloo({
   subsets: ["latin"],
   weight: ["400"],
   variable: "--font-delius",
