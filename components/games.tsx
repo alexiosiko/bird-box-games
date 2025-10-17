@@ -15,8 +15,8 @@ type Game = {
 }
 const games: Game[] = [
   {
-    title: "Pixel Dungeons",
-    image: "/games/pixel-dungeons.jpg",
+    title: "You Move I Move",
+    image: "/games/you-move-i-move.png",
     description: "A turn-based puzzle game.",
     computer: "https://store.steampowered.com/app/3896240/Pixel_Dungeons/",
 	android: "https://store.steampowered.com/app/3896240/Pixel_Dungeons/",
