@@ -1,29 +1,66 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
-const games = [
+type Game = {
+	title: string;
+    image: string;
+    description: string;
+    computer: string;
+    android: string;
+    iphone: string;
+    layout: {
+        col: number;
+        row: number;
+    };
+}
+const games: Game[] = [
   {
     title: "Pixel Dungeons",
     image: "/games/pixel-dungeons.jpg",
     description: "A turn-based puzzle game.",
-    link: "https://store.steampowered.com/app/3896240/Pixel_Dungeons/",
+    computer: "https://store.steampowered.com/app/3896240/Pixel_Dungeons/",
+	android: "https://store.steampowered.com/app/3896240/Pixel_Dungeons/",
+	iphone: "https://apps.apple.com/ca/app/pixel-dungeons/id6752780292",
     layout: { col: 4, row:4 },
   },
   {
     title: "Fishing-Contest",
     image: "/games/fishing-contest.jpg",
     description: "(IN DEVELOPMENT)",
+	computer: "",
+	android: "",
+	iphone: "",
     layout: { col: 2, row: 2 },
   },
   {
     title: "Mini Chef",
     image: "/games/mini-chef.jpg",
     description: "(IN DEVELOPMENT)",
+	computer: "",
+	android: "",
+	iphone: "",
     layout: { col: 2, row: 2 },
   },
 ];
 
 export default function Games() {
+	const getDeviceType = () => {
+		const ua = navigator.userAgent.toLowerCase();
+
+		if (/iphone|ipad|ipod/.test(ua)) return "iPhone";
+		if (/android/.test(ua)) return "Android";
+		return "Computer";
+	};
+
+	const handleGameClick = (game: Game) => {
+		const deviceType = getDeviceType();
+		switch (deviceType) {
+			case "iPhone": window.open(game.iphone); break;
+			case "Android": window.open(game.android); break;
+			case "Computer": window.open(game.computer); break;
+		}
+		console.log(getDeviceType());
+	}
   return (
     <section
       id="games"
@@ -43,9 +80,9 @@ export default function Games() {
       <div className="max-w-6xl mx-auto md:grid flex flex-col grid-cols-6 gap-6 auto-rows-[6rem]">
         {games.map((game, index) => (
           <motion.a
+		  	onClick={() => handleGameClick(game)}
             key={index}
-            href={game.link}
-            target="_blank"
+            // href={game.link}
             rel="noopener noreferrer"
             className="relative rounded-3xl w-full max-md:aspect-video overflow-hidden shadow-lg bg-[hsl(var(--card))] transition-all duration-300 hover:scale-105 hover:shadow-2xl"
             style={{
