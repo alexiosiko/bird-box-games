@@ -1,7 +1,7 @@
 "use client";
 import Footer from "@/components/footer";
 import Nav from "@/components/nav";
-import Games from "@/components/games";
+import Games from "@/components/games/games";
 import About from "@/components/about";
 import Hero from "@/components/hero";
 import WhoWeAre from "@/components/whoarewe";
