@@ -12,7 +12,7 @@ export default function Games() {
       <motion.div
         initial={{ opacity: 0, x: -80 }}
         whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true, amount: 0 }}
+        viewport={{ once: true }}
         transition={{ duration: 0.25, type: "tween", ease: "easeInOut" }}
       >
         <h2 className="text-5xl md:text-6xl font-bold text-center text-[hsl(var(--primary-foreground))] mb-16">
@@ -20,8 +20,7 @@ export default function Games() {
         </h2>
       </motion.div>
 
-      {/* Games list */}
-      <div className="flex flex-col gap-20 max-w-6xl mx-auto">
+      <div className="flex flex-col gap-24 max-w-7xl mx-auto">
         {games.map((game, index) => {
           const isReversed = index % 2 === 1;
 
@@ -31,12 +30,12 @@ export default function Games() {
               className={`flex flex-col md:flex-row items-center gap-10 ${
                 isReversed ? "md:flex-row-reverse" : ""
               }`}
-              initial={{ opacity: 0, y: 50 }}
+              initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true, amount: 0 }}
-              transition={{ duration: 0.3 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4 }}
             >
-              {/* Cover Image */}
+              {/* Image */}
               <div className="relative w-full md:w-1/2 aspect-[16/9] rounded-3xl overflow-hidden shadow-lg">
                 <Image
                   src={game.image}
@@ -48,13 +47,13 @@ export default function Games() {
 
               {/* Info + Buttons */}
               <div
-                className={`flex flex-col justify-center gap-6 w-full md:w-1/2
-                  items-center text-center 
-                  md:items-${isReversed ? "end" : "start"} md:text-${
-                  isReversed ? "right" : "left"
-                }`}
+                className={`
+                  flex flex-col justify-center gap-6 w-full md:w-1/2
+                  text-center md:text-left items-center md:items-start
+                  ${isReversed ? "md:pl-24 md:items-end md:text-right" : "md:pr-24 md:items-start md:text-left"}
+                `}
               >
-                <div>
+                <div className="w-full max-md:text-center">
                   <h3 className="text-3xl md:text-4xl font-bold mb-3">
                     {game.title}
                   </h3>
