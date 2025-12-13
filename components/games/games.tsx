@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { FaSteam, FaApple, FaAndroid } from "react-icons/fa";
-import { Game, games } from "@/lib/game";
+import { games } from "@/lib/game";
 
 export default function Games() {
   return (
@@ -57,7 +57,7 @@ export default function Games() {
                   <h3 className="text-3xl md:text-4xl font-bold mb-3">
                     {game.title}
                   </h3>
-                  <p className="text-lg text-muted-foreground max-w-md mx-auto md:mx-0">
+                  <p className=" text-lg text-muted-foreground  mx-auto md:mx-0">
                     {game.description}
                   </p>
                 </div>
