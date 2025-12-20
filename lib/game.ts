@@ -27,14 +27,42 @@ export const games: Game[] = [
     layout: { col: 4, row:4 },
   },
   {
-	title: "Perfect Pitch Training",
-	image: "/games/perfect-pitch-training.jpg",
+	title: "Eyes On Me",
+	image: "/games/eyes-on-me.png",
+	description: "First person interactive horror game.",
+	platforms: {
+		computer: "https://store.steampowered.com/app/3558100",
+
+	},
+	layout: { col: 2, row: 2 },
+  },
+  {
+	title: "Ear Training",
+	image: "/games/ear-training.png",
 	description: "Turn music training into a game.",
 	platforms: {
 		computer: "https://store.steampowered.com/app/3855710",
 
 	},
 	layout: { col: 2, row: 2 },
+  },
+  {
+    title: "Poker Crush",
+    image: "/games/poker-crush.jpg",
+    description: "A simple swap and collapse poker style puzzle game.",
+	platforms: {
+		computer: "https://store.steampowered.com/app/2536410",
+	},
+    layout: { col: 2, row: 2 },
+  },
+  {
+    title: "The Closing Shift",
+    image: "/games/the-closing-shift.jpg",
+    description: "First person horror game about a killer lose in the town.",
+	platforms: {
+		computer: "https://store.steampowered.com/app/3420300/"
+	},
+    layout: { col: 2, row: 2 },
   },
   {
     title: "Fishing Contest",
