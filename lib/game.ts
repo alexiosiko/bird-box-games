@@ -67,7 +67,7 @@ export const games: Game[] = [
   {
     title: "Fishing Contest",
     image: "/games/fishing-contest.jpg",
-    description: "(IN DEVELOPMENT)",
+    description: "Catch the biggest and most valueable fish to win!",
 	platforms: {
 
 	},
@@ -76,7 +76,7 @@ export const games: Game[] = [
   {
     title: "Mini Chef",
     image: "/games/mini-chef.jpg",
-    description: "(IN DEVELOPMENT)",
+    description: "Mix the recipes and become the ultimate mini chef!",
     layout: { col: 2, row: 2 },
 	platforms: {
 

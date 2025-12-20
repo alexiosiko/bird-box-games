@@ -43,7 +43,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="md:py-32 px-6 md:px-20 text-center bg-[hsl(var(--background))]"
+      className="md:py-24 px-6 md:px-20 text-center bg-[hsl(var(--background))]"
     >
       {/* Headline */}
       {isMobile ? (
@@ -80,53 +80,7 @@ const About = () => {
       )}
 
       {/* Showcase Grid */}
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-        {aboutCards.map((card, index) => (
-          isMobile ? (
-            <div
-              key={card.title}
-              className="flex flex-col justify-between rounded-3xl overflow-hidden shadow-xl bg-[hsl(var(--muted))] hover:scale-[1.02] transition-transform duration-700"
-            >
-              <Image
-                src={card.image}
-                alt={card.alt}
-                width={800}
-                height={800}
-                className="object-cover w-full h-72"
-              />
-              <div className="p-6 text-left">
-                <h3 className="text-2xl font-bold text-[hsl(var(--foreground))] mb-2">{card.title}</h3>
-                <p className="text-[hsl(var(--muted-foreground))]">
-                  {card.description}
-                </p>
-              </div>
-            </div>
-          ) : (
-            <motion.div
-              key={card.title}
-              className="flex flex-col justify-between rounded-3xl overflow-hidden shadow-xl "
-              initial={{ y: 80 }}
-              whileInView={{ y: 0 }}
-              viewport={{ once: true, amount: 0 }}
-              transition={{ delay: index * 0.2 }}
-            >
-              <Image
-                src={card.image}
-                alt={card.alt}
-                width={800}
-                height={800}
-                className="object-cover w-full h-72"
-              />
-              <div className="p-6 text-left">
-                <h3 className="text-2xl font-bold text-[hsl(var(--foreground))] mb-2">{card.title}</h3>
-                <p className="text-[hsl(var(--muted-foreground))]">
-                  {card.description}
-                </p>
-              </div>
-            </motion.div>
-          )
-        ))}
-      </div>
+   
     </section>
   );
 };
