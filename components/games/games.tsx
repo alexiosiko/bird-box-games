@@ -44,7 +44,7 @@ export default function Games() {
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true, amount: 0 }}
                   transition={{ duration: 0.25, type: 'tween', ease: 'easeInOut' }}
-                  className={`relative flex-shrink-0 w-full md:w-1/2 lg:w-2/5 rounded-2xl overflow-hidden shadow-lg outline`}
+                  className={`relative flex-shrink-0 w-full md:w-1/2 lg:w-2/5 rounded-2xl overflow-hidden shadow-md shadow-gray-300`}
                 > 
                   <div className="relative aspect-[16/9] ">
                     <Image src={game.image} alt={game.title} fill className="object-cover h-24" />
