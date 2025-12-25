@@ -13,8 +13,8 @@ export default function Home() {
       	<Nav />
 		<main className=" mx-auto bg-[hsl(var(--background))] text-[hsl(var(--foreground))]">
 			<Hero />
-			<DevPhotos />
 			<About />
+			<DevPhotos />
 			<WhoWeAre />
 			<Games />
 			<Footer />
