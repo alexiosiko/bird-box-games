@@ -85,7 +85,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           }}
         />
       </head>
-      <body className={font.className}>
+      <body className={`${font.className}`}>
         <div className="overflow-hidden">{children}</div>
         <Analytics />
       </body>

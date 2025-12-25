@@ -4,44 +4,72 @@
 
 /* ---------------------- Colors & Tailwind ---------------------- */
 @layer base {
-  :root {
-    /* Softer pastels */
-    --background: 44, 93%, 95%;
-    --foreground: 222, 47%, 11%;
-    
-    --muted: 210, 40%, 96%;
-    --muted-foreground: 215, 16%, 47%;
-    
-    --card: 50, 70%, 90%;
-    --card-foreground: 222, 47%, 11%;
-    
-    --primary: 54, 100%, 80%;
-    --primary-foreground: 222, 47%, 11%;
-    
-    --secondary: 200, 80%, 90%;
-    --secondary-foreground: 222, 47%, 11%;
-    
-    --accent: 330, 80%, 90%;
-    --accent-foreground: 222, 47%, 11%;
-    
-    --destructive: 0, 70%, 80%;
-    --destructive-foreground: 222, 47%, 11%;
-    
-    --radius: 1rem;
-    --ring: 210, 60%, 80%;
+ :root {
+  --background:  44, 93%, 95%;
+  --foreground: 39.1 2.5% 7.5%;
+  --card: 39.1 25% 95%;
+  --card-foreground: 39.1 2.5% 12.5%;
+  --popover: 39.1 50% 97.5%;
+  --popover-foreground: 39.1 97.5% 5%;
+  --primary: 59 94.2% 72.9%;
+  --primary-foreground: 0, 0%, 0%;
+  --secondary: 44, 93%, 95%;
+  --secondary-foreground: 0 0% 0%;
+  --muted: 77.1 20% 90%;
+  --muted-foreground: 39.1 2.5% 37.5%;
+  --accent: 77.1 20% 85%;
+  --accent-foreground: 39.1 2.5% 12.5%;
+  --destructive: 0 75% 40%;
+  --destructive-foreground: 39.1 2.5% 95%;
+  --border: 39.1 25% 66%;
+  --input: 39.1 25% 34%;
+  --ring: 39.1 88.7% 45.3%;
+  --radius: 0.5rem;
+  --sidebar-background: 39, 50%, 90%;
+  --sidebar-foreground: 39, 3%, 7%;
+  --sidebar-primary: 39, 100%, 58%;
+  --sidebar-primary-foreground: 0 0% 0%;
+  --sidebar-accent: 77, 20%, 81%;
+  --sidebar-accent-foreground: 0 0% 0%;
+  --sidebar-border: 39, 25%, 63%;
+  --sidebar-ring: 29, 98%, 45%;
+}
 
-    /* Fonts */
-    --font-title: "Pacifico";
-    --font-body: "SourGummy";
-  }
+.dark {
+  --background: 39.1 30% 7.5%;
+  --foreground: 39.1 2.5% 95%;
+  --card: 39.1 25% 5%;
+  --card-foreground: 39.1 2.5% 95%;
+  --popover: 39.1 30% 5%;
+  --popover-foreground: 39.1 2.5% 95%;
+  --primary: 39.1 100% 63.9%;
+  --primary-foreground: 0, 0%, 0%;
+ --secondary: 44, 93%, 95%;
+  --secondary-foreground: 0 0% 100%;
+  --muted: 77.1 20% 20%;
+  --muted-foreground: 39.1 2.5% 62.5%;
+  --accent: 77.1 20% 20%;
+  --accent-foreground: 39.1 2.5% 92.5%;
+  --destructive: 0 75% 40%;
+  --destructive-foreground: 39.1 2.5% 95%;
+  --border: 39.1 25% 34%;
+  --input: 39.1 25% 34%;
+  --ring: 39.1 88.7% 45.3%;
+  --radius: 0.5rem;
+  --sidebar-background: 39, 30%, 10%;
+  --sidebar-foreground: 39, 3%, 100%;
+  --sidebar-primary: 39, 100%, 51%;
+  --sidebar-primary-foreground: 0, 0%, 0%;
+  --sidebar-accent: 77, 20%, 17%;
+  --sidebar-accent-foreground: 0 0% 100%;
+  --sidebar-border: 39, 25%, 32%;
+  --sidebar-ring: 29, 98%, 45%;
+}
 
   body {
     @apply bg-[hsl(var(--background))] text-[hsl(var(--foreground))] font-sans;
   }
 
-  h1, h2, h3, h4, h5, h6 {
-    color: hsl(var(--primary-foreground));
-  }
 
   a {
     transition: color 0.3s;

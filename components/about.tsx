@@ -43,7 +43,7 @@ const About = () => {
   return (
     <section
       id="about"
-      className="md:py-24 px-6 md:px-20 text-center bg-[hsl(var(--background))]"
+      className="md:pt-24 px-6 md:px-20 text-center bg-[hsl(var(--background))]"
     >
       {/* Headline */}
       {isMobile ? (

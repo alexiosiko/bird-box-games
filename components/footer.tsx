@@ -33,7 +33,7 @@ const socials = [
 
 export default function Footer() {
   return (
-    <footer id='footer' className="py-20 px-6  text-[hsl(var(--muted-foreground))]">
+    <footer id='footer' className="py-20 px-6 bg-primary/20 text-primary-foreground">
       <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-12 text-center md:text-left">
         
         {/* Left - Studio Info */}

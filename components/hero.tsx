@@ -23,7 +23,7 @@ export default function Hero() {
 
 
   return (
-    	<section className="h-screen relative flex-col justify-center flex">
+    	<section className="h-screen relative flex-col justify-center bg-secondary flex">
 		{/* Logo/Video */}
 	 	 <div className=' relative  min-h-[460px] h-min max-w-2xl mx-auto' >
 

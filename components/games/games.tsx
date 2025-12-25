@@ -36,7 +36,7 @@ export default function Games() {
             >
               {/* Card background */}
               <div
-                className={`w-full bg-primary/10 rounded-3xl md:p-6 flex flex-col md:flex-row ${isReversed ? 'md:flex-row-reverse' : ''} items-center gap-6 text-[hsl(var(--primary-foreground))]`}
+                className={`w-full rounded-3xl md:p-6 flex flex-col md:flex-row ${isReversed ? 'md:flex-row-reverse' : ''} items-center gap-6 text-[hsl(var(--primary-foreground))]`}
               >
                 {/* Image area */}
                 <motion.div

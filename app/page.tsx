@@ -5,13 +5,15 @@ import Games from "@/components/games/games";
 import About from "@/components/about";
 import Hero from "@/components/hero";
 import WhoWeAre from "@/components/whoarewe";
+import DevPhotos from "@/components/devPhotos";
 
 export default function Home() {
   return (
     <>
       	<Nav />
-		<main className="max-w-7xl  mx-auto bg-[hsl(var(--background))] text-[hsl(var(--foreground))]">
+		<main className=" mx-auto bg-[hsl(var(--background))] text-[hsl(var(--foreground))]">
 			<Hero />
+			<DevPhotos />
 			<About />
 			<WhoWeAre />
 			<Games />
